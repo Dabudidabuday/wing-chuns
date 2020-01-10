@@ -1,0 +1,32 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px 45px 125px;
+  background-color: #000;
+
+  .title-box {
+    margin-bottom: 60px;
+
+    .title {
+      color: #fff;
+    }
+  }
+
+  .main-header__address {
+    margin-bottom: 25px;
+  }
+
+  .main-header__tel {
+    margin-bottom: 25px;
+  }
+}
+
+.contacts__socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .item:not(:first-child) {
+    margin-left: 30px;
+  }
+}

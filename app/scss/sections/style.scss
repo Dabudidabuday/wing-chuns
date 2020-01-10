@@ -1,0 +1,97 @@
+.style {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 50px;
+  background-color: #000;
+  height: auto;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transform-origin: bottom right;
+    transform: skewY(-3deg);
+    z-index: -1;
+  }
+
+  .title {
+    color: #fff;
+  }
+}
+
+.style-subtitle {
+  position: relative;
+  margin-top: 23px;
+  font-size: 28px;
+  font-weight: 800;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 12%;
+    width: 284px;
+    height: 2px;
+    background-color: #fbec06;
+  }
+}
+
+// описание карточки раздела школы(стили школы)
+
+.style__mode {
+  padding-top: 40px;
+  display: flex;
+}
+
+.style__mode-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description--1 {
+  transform: translate3d(-76px, 138px, 0);
+}
+
+.description--2 {
+  margin-left: 70px;
+}
+
+.style__mode-description-text {
+  padding-left: 20px;
+  font-size: 28px;
+  line-height: 41px;
+  font-weight: 800;
+  max-width: 546px;
+  text-align: left;
+}
+
+.style__mode-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 175px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #fbec06;
+}
+
+.style__mode-img {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.style__mode {
+  display: flex;
+  justify-content: space-around;
+}

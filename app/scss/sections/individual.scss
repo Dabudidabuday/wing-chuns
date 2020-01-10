@@ -1,0 +1,25 @@
+.individual {
+  background-color: #000;
+  padding: 50px 70px 50px 70px;
+
+  .title-box {
+    display: block;
+    margin: 0 auto;
+    max-width: 720px;
+
+    .title {
+      color: #fff;
+      font-size: 48px;
+      text-transform: initial;
+      font-weight: 800;
+    }
+  }
+}
+
+.individual__video {
+  margin-top: 50px;
+  iframe {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,64 @@
+.cost {
+  position: relative;
+  padding: 0 100px 140px 100px;
+  background-color: #000;
+  height: auto;
+
+  .title-box {
+    margin: 50px 0 0 50px;
+
+    .title {
+      color: #fff;
+      text-transform: initial;
+    }
+  }
+}
+
+.cost__list-title {
+  margin-top: 88px;
+  font-size: 42px;
+  line-height: 52px;
+  color: $yellow;
+  font-weight: 800;
+}
+
+.cost__lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .cost__list-item {
+    max-width: 530px;
+    width: 100%;
+
+    .cost__list {
+      margin-top: 20px;
+
+      .item {
+        font-size: 28px;
+        line-height: 47px;
+      }
+    }
+  }
+}
+
+.cost__img {
+  position: absolute;
+  right: 180px;
+  bottom: 10px;
+}
+
+.faq {
+  padding: 50px 100px 50px 100pxv;
+  color: #000;
+
+  .title-box {
+    display: block;
+    margin: 0 auto;
+    max-width: 463px;
+
+    .title {
+      text-transform: initial;
+    }
+  }
+}

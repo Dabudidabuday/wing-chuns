@@ -1,0 +1,36 @@
+.group {
+  padding: 80px 70px 70px 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.group__image {
+  border-radius: 10px;
+
+  img {
+    box-shadow: 0 0 10px 2px #ababab;
+    border-radius: 10px;
+  }
+}
+
+.group__description {
+  .button {
+    margin-top: 40px;
+    width: 318px;
+  }
+}
+.group__description-title {
+  margin-top: 30px;
+  font-size: 32px;
+  color: #000;
+  font-weight: 800;
+}
+
+.group__description-list {
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 100;
+  color: #000;
+}
+
