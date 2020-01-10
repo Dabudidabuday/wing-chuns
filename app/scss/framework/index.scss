@@ -2,5 +2,17 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "containers.scss";
-@import "buttons.scss";
 @import "fonts.scss";
+@import "typography.scss";
+
+//Components
+@import "components/accordion.scss";
+@import "components/title-box.scss";
+@import "components/buttons.scss";
+
+html,
+body {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 18px;
+  color: #fff;
+}

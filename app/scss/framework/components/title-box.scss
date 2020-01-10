@@ -1,0 +1,14 @@
+.title-box {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid #fbec06;
+  border-bottom: 2px solid #fbec06;
+
+  .title {
+    font-size: 52px;
+    color: #000;
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+}

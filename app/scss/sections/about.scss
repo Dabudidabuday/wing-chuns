@@ -3,61 +3,20 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 530px;
   background-color: #fff;
   background-image: url("../../../images/about-bg.png");
   background-repeat: no-repeat;
-  z-index: 2;
+  background-size: contain;
+  z-index: 4;
   padding-bottom: 100px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    transform-origin: top left;
-    transform: skewY(-3deg);
-    z-index: -1;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    transform-origin: bottom right;
-    transform: skewY(-3deg);
-    z-index: -1;
-  }
+  @include skewTop;
+  @include skewBottom;
 }
 
 .about__description {
   margin-top: 130px;
 }
 
-.title-box {
-  display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: 2px solid #fbec06;
-  border-bottom: 2px solid #fbec06;
-
-  .title {
-    font-size: 52px;
-    color: #000;
-    text-transform: uppercase;
-  }
-}
 
 .about__biography {
   margin-top: 20px;
