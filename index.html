@@ -10,6 +10,10 @@
     />
     <link rel="stylesheet" href="dist/main.css" />
     <title>Document</title>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -115,7 +119,9 @@
             <span class="text-accent">Вин-чун </span>Кунг-фу
           </h1>
 
-          <h2 class="intro__subtitle">Мастера Токана Игоря Владимировича.</h2>
+          <h2 class="intro__subtitle">
+            Мастера <span>Токана Игоря Владимировича.</span>
+          </h2>
 
           <div class="intro__buttons">
             <button class="button button--more" type="button">Подробнее</button>
@@ -133,7 +139,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__description">
           <div class="title-box">
             <h3 class="title">
@@ -204,18 +210,17 @@
           </div>
           <div class="style__mode-description description--3">
             <div class="style__mode-number">
-            <img src="images/number.png" alt="" />
+              <img src="images/number.png" alt="" />
               <img src="images/number.png" alt="" />
               <img src="images/number.png" alt="" />
             </div>
             <span class="style__mode-description-text"
-              >Третий раздел — работа с психикой, которая постоянно подвергается стрессу в повседневной жизни, её равновесием и балансом <br />
+              >Третий раздел — работа с психикой, которая постоянно подвергается
+              стрессу в повседневной жизни, её равновесием и балансом <br />
               ведения боя и самообороны.</span
             >
           </div>
         </div>
-
-        
       </section>
 
       <section class="healh">
@@ -698,14 +703,14 @@
       </footer>
     </div>
 
-    <script>
-      "use strict";
-
-      let button = document.querySelector("accordion__link"),
-        answer = document.querySelector("accordion__answer");
-
-      button.addEventListener("click", function() {
-        answer.style.display = "none";
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#menu").on("click", "a", function(event) {
+          event.preventDefault();
+          var id = $(this).attr("href"),
+            top = $(id).offset().top;
+          $("body,html").animate({ scrollTop: top }, 1500);
+        });
       });
     </script>
   </body>
