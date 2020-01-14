@@ -6,14 +6,617 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="dist/main.css" />
     <title>Document</title>
-    <script
+    <!-- <script
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
-    ></script>
+    ></script> -->
   </head>
   <body>
-    <div class="container">
-      <header class="main-header">
+    <header class="main-header">
+      <div class="main-header__address">
+        <span class="main-header__marker">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg
+            width="23px"
+            height="33px"
+            viewBox="0 0 23 33"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+            <title>Shape</title>
+            <desc>Created with Sketch.</desc>
+            <g
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <g
+                id="Desktop-HD"
+                transform="translate(-78.000000, -71.000000)"
+                fill="#FBEC06"
+                fill-rule="nonzero"
+              >
+                <path
+                  d="M101,82.4316203 C101,76.1181107 95.8512745,71 89.5,71 C83.1487255,71 78,76.1181107 78,82.4316203 C78,82.6243236 78.0048245,82.8158642 78.0144734,83.0062423 C78.0051169,83.1966203 78.0002924,83.388161 78,83.5808643 C78.0004386,89.8938585 89.5002193,104 89.5002193,104 C89.5002193,104 101,89.8938585 101,83.5804283 C101,83.387725 100.995176,83.1961844 100.985527,83.0058063 C100.994883,82.8157189 100.999708,82.6243236 101,82.4316203 Z M89.5000804,88 C87.2755294,88 85.2700306,86.7817624 84.418774,84.9133673 C83.5675174,83.0449722 84.0381501,80.8943823 85.6112098,79.4644455 C87.1842695,78.0345087 89.5499571,77.6068377 91.6051217,78.3808608 C93.6602864,79.154884 95.0001828,80.9781649 95,83.000484 C94.9997504,85.7617069 92.5374256,88 89.5000804,88 Z"
+                  id="Shape"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </span>
+        <p>
+          г.Одесса, ул. Большая арнаутска 698
+        </p>
+      </div>
+
+      <div class="main-header__logo">
+        <img src="/images/header-logo.png" alt="" />
+      </div>
+
+      <div class="main-header__tel">
+        <div class="main-header__tel-img">
+          <img src="images/tel.png" alt="" />
+        </div>
+        <a href="tel">+38 <span class="text-accent">(093)</span> 999 99 99</a>
+      </div>
+
+      <div class="main-header__border-bottom">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg
+          width="1440px"
+          height="30px"
+          viewBox="0 0 1440 30"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+          <title>Path</title>
+          <desc>Created with Sketch.</desc>
+          <g
+            id="Page-1"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g
+              id="Desktop-HD"
+              transform="translate(0.000000, -167.000000)"
+              stroke="#FFFFFF"
+            >
+              <path
+                d="M0,168 C422.817324,168 649.50627,168 680.066837,168 C711.323052,205.333333 745.082497,205.333333 781.345174,168 L1440,168"
+                id="Path"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="main-header__button">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="intro__bg">
+        <img src="images/intro-bg.png" alt="" />
+      </div>
+      <div class="intro__description">
+        <h1 class="intro__title">
+          <span class="text-accent">Вин-чун </span>Кунг-фу
+        </h1>
+
+        <h2 class="intro__subtitle">
+          Мастера <span>Токана Игоря Владимировича.</span>
+        </h2>
+
+        <div class="intro__buttons">
+          <button class="button button--more" type="button">Подробнее</button>
+          <button class="button button--go" type="button">Записаться</button>
+        </div>
+
+        <p class="intro__text">
+          Групповые и индивидуальные тренировки для мужчин, женщин и детей.
+        </p>
+      </div>
+
+      <div class="intro__scroll">
+        <div class="scroll-img"></div>
+        <span class="scroll-text">скрольте вниз</span>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__description">
+        <div class="title-box">
+          <h3 class="title">
+            о мастере
+          </h3>
+        </div>
+
+        <p class="about__biography">
+          Токан Игорь Владимирович, родился и вырос в городе Одессе. Своё
+          изучение стиля Вин Чун начал в 1992 году. Имеет опыт преподавания
+          более 20 лет. За это время, воспитал ряд учеников, которые преподают в
+          Украине и за рубежом.
+        </p>
+      </div>
+
+      <div class="about__img">
+        <img src="images/about-img.png" alt="" />
+      </div>
+    </section>
+
+    <section class="style">
+      <div class="title-box">
+        <h3 class="title">
+          о стиле
+        </h3>
+      </div>
+
+      <h3 class="style-subtitle">
+        Вин Чун — это боевое искусство, которое включает в себя 3 больших
+        раздела.
+      </h3>
+
+      <div class="style__mode">
+        <div class="style__mode-img">
+          <img src="images/style-1.png" alt="" />
+        </div>
+        <div class="style__mode-description description--1">
+          <div class="style__mode-number">
+            <img src="images/number.png" alt="" />
+          </div>
+          <span class="style__mode-description-text"
+            >Первый раздел — это навык <br />
+            ведения боя и самообороны.</span
+          >
+        </div>
+      </div>
+
+      <div class="style__mode">
+        <div class="style__mode-description description--2">
+          <div class="style__mode-number">
+            <img src="images/number.png" alt="" />
+            <img src="images/number.png" alt="" />
+          </div>
+          <span class="style__mode-description-text">
+            Второй раздел – это цигун. Он отвечает за физическое и психическое
+            здоровье практикующего.
+          </span>
+        </div>
+
+        <div class="style__mode-img">
+          <img src="images/style-2.png" alt="" />
+        </div>
+      </div>
+
+      <div class="style__mode">
+        <div class="style__mode-img">
+          <img src="images/style-3.png" alt="" />
+        </div>
+        <div class="style__mode-description description--3">
+          <div class="style__mode-number">
+            <img src="images/number.png" alt="" />
+            <img src="images/number.png" alt="" />
+            <img src="images/number.png" alt="" />
+          </div>
+          <span class="style__mode-description-text"
+            >Третий раздел — работа с психикой, которая постоянно подвергается
+            стрессу в повседневной жизни, её равновесием и балансом <br />
+            ведения боя и самообороны.</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="healh">
+      <div class="title-box">
+        <h3 class="title">
+          Здоровье и цигун
+        </h3>
+      </div>
+      <h5 class="health__subtitle">
+        Скажите нет болезням и плохому настроению!
+      </h5>
+
+      <div class="health__description">
+        <div class="health__description--left-side">
+          <h4 class="health__description-title">
+            Изучайте цигун с нами и вы получите:
+          </h4>
+
+          <div class="health__description-image">
+            <img src="images/health-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="health__description--right-side">
+          <div class="health__description-img">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg
+              width="106px"
+              height="90px"
+              viewBox="0 0 106 90"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+              <title>Group</title>
+              <desc>Created with Sketch.</desc>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  id="Desktop-HD-Copy-5"
+                  transform="translate(-743.000000, -3375.000000)"
+                >
+                  <g id="health" transform="translate(744.000000, 3375.000000)">
+                    <g id="Group">
+                      <polygon
+                        id="Path-2"
+                        stroke="#FBEC06"
+                        stroke-width="6"
+                        points="1.98951966e-13 43.0747667 29.7463713 43.1682561 34.3302656 29.9793043 40.9148382 56.4029852 46.2437051 43.8856334 55.2855372 43.8856334 59.3002309 29.9793043 67.0724975 56.4029852 73.3631868 43.1911448 104 43.0747667"
+                      ></polygon>
+                      <path
+                        d="M59.0406729,38.4830769 L66.82624,61.5233192 L74.0205093,45.5553808 L85.1215964,45.5553808 L85.1215964,45.5154 L103.998902,45.5154 L103.998902,49.9172308 L92.3752844,49.9172308 C79.6257742,72.1963154 51.9317298,89.9573077 51.9317298,89.9573077 C51.9317298,89.9573077 24.2376738,72.1963038 11.4881751,49.9172192 L11.4881751,49.9172192 L0.00109777778,49.9172192 L0.00109777778,45.5154 L19.7782116,45.5154 L19.7782116,45.5553808 L31.7674702,45.5553808 L34.5447093,39.0642577 L41.1847858,60.4741038 L47.8591591,45.6794885 L56.901,45.6794885 L59.0406729,38.4830769 Z M72.1753298,0.0426923077 C84.5661324,0.0426923077 97.564376,9.06624231 98.6193636,27.3404654 C98.8264904,32.0430057 98.0898676,36.7394329 96.4528124,41.1535731 L96.4528124,41.1535731 L71.1698924,41.1535731 L67.4130773,49.4918192 L58.772168,23.9200962 L53.6112258,41.2776231 L45.0098711,41.2776231 L41.9498676,48.0607615 L35.2054213,26.3150192 L28.8571342,41.1535731 L7.41064711,41.1535615 C5.77360643,36.7394185 5.03699935,32.0429911 5.24414222,27.3404538 C6.29908356,9.06623077 19.2973387,0.0426923077 31.6881298,0.0426923077 C40.6295991,0.0426923077 48.3260613,6.42323077 51.9317298,15.6310385 C55.5373982,6.42323077 63.2338489,0.0426923077 72.1753298,0.0426923077 Z"
+                        id="Path-3"
+                        fill="#000000"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <ul class="health__description-list">
+            <li class="item">- крепкое здоровье</li>
+            <li class="item">- лишний вес уйдёт</li>
+            <li class="item">- Ваше настроение улучшиться</li>
+            <li class="item">- Ваш организм «Омолодиться»</li>
+            <li class="item">
+              - Вы станете более энергичными и оптимистичными
+            </li>
+          </ul>
+
+          <div class="health__description-image">
+            <img src="images/health-2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="combat">
+      <div class="title-box">
+        <h3 class="title">
+          Навык ведения боя, и самооборона
+        </h3>
+      </div>
+
+      <div class="flex-container">
+        <div class="combat__video">
+          <!-- <iframe
+              width="483"
+              height="666"
+              src="https://www.youtube.com/embed/69TSIsqACLY"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe> -->
+        </div>
+
+        <div class="combat__description">
+          <div class="combat__description-img">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg
+              width="79px"
+              height="115px"
+              viewBox="0 0 79 115"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+              <title>Group</title>
+              <desc>Created with Sketch.</desc>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  id="Desktop-HD-Copy-2"
+                  transform="translate(-760.000000, -4813.000000)"
+                >
+                  <g id="wushu" transform="translate(760.000000, 4813.000000)">
+                    <g id="Group">
+                      <ellipse
+                        id="Oval"
+                        fill="#FFFFFF"
+                        cx="39.3226531"
+                        cy="12.0911215"
+                        rx="12.0918367"
+                        ry="12.0911215"
+                      ></ellipse>
+                      <path
+                        d="M5.06083673,114.720023 C5.61706122,114.861893 6.17543537,114.929603 6.72413605,114.929603 C9.72291156,114.93014 12.4551293,112.907967 13.2300816,109.869065 L19.7102313,84.4304206 L33.1826871,76.3707477 L35.0163469,67.0734813 C30.911034,66.7881308 27.953102,66.060514 26.1919932,64.8976168 L10.4355238,74.3233178 C8.91732653,75.2325701 7.81132653,76.7157477 7.37494558,78.4294626 L0.209591837,106.552874 C-0.706163265,110.148505 1.46606803,113.804322 5.06083673,114.720023 Z"
+                        id="Path"
+                        fill="#FFFFFF"
+                      ></path>
+                      <path
+                        d="M50.6733946,58.1615187 L51.1242857,57.9750467 L52.4989932,44.6108645 C52.8101565,45.0644159 53.132068,45.5125935 53.4668776,45.9500234 C54.889415,47.7647664 56.4457687,49.4811682 58.7706259,50.6413785 C59.3580204,50.9251168 59.998619,51.0675234 60.6402925,51.0675234 C61.2373605,51.0675234 61.8355034,50.9439252 62.3906531,50.6961916 C63.5412585,50.183528 64.4183197,49.176472 64.7697891,47.9673598 C64.8740476,47.6083879 65.9467279,43.7236449 65.9456539,36.5248598 C65.9456539,33.5692523 65.7650816,30.0574533 65.2658231,26.0034346 C64.9750816,23.646472 62.8307959,21.971986 60.4731565,22.2621729 C58.1160544,22.5518224 56.4420068,24.6975935 56.7316735,27.0534813 C57.1562313,30.5029439 57.3233673,33.4800467 57.3443265,35.9761916 C56.9573878,35.2448131 56.5983946,34.5236449 56.2807823,33.8524533 C55.7535782,32.7432944 55.3263333,31.7636449 55.0361293,31.0714953 C54.8915646,30.7248832 54.7803197,30.4508178 54.7077687,30.2681075 C54.6341429,30.0843224 54.6056599,30.0112383 54.6056599,30.0101636 C53.8978844,28.1561916 52.045415,27.0798131 50.1617755,27.2700467 C50.0118367,27.2539252 49.8592109,27.243715 49.7049728,27.243715 L28.9419456,27.243715 C28.7871701,27.243715 28.6345442,27.2539252 28.484068,27.2700467 C26.5993537,27.0803505 24.7468844,28.1556542 24.0391088,30.0101636 C24.0391088,30.0101636 24.0294354,30.0348832 23.9982653,30.1149533 C23.785449,30.658785 22.745551,33.2360748 21.2999048,35.9772664 C21.3208639,33.4795093 21.4874626,30.5040187 21.9141701,27.0545561 C22.2049116,24.6992056 20.5308639,22.5523598 18.1737619,22.2610981 C15.8182721,21.9698364 13.6712993,23.6443224 13.3800204,26.0007477 C12.8786122,30.0574533 12.6985782,33.5714019 12.6985782,36.526472 C12.6985782,43.725257 13.7707211,47.6083879 13.875517,47.9657477 C14.2259116,49.176472 15.1029728,50.1824533 16.2535782,50.6956542 C16.8081905,50.9428505 17.4057959,51.0659112 18.0039388,51.0659112 C18.6450748,51.0659112 19.2867483,50.9235047 19.8741429,50.6403037 C22.199,49.4806308 23.7542789,47.7647664 25.1778912,45.949486 C25.5137755,45.5099065 25.8340748,45.0579673 26.1473878,44.601729 L27.5301565,58.0540421 C29.5674966,58.5113551 35.2178776,59.6876882 39.3221156,59.6876882 C46.8916054,59.6892991 50.6368503,58.176028 50.6733946,58.1615187 Z"
+                        id="Path"
+                        fill="#FFFFFF"
+                      ></path>
+                      <path
+                        d="M43.6273469,67.0734813 L45.4615442,76.3702103 L58.9329252,84.4298832 L65.4152245,109.869065 C66.1885646,112.90743 68.9218571,114.929603 71.9195578,114.93014 C72.4693333,114.93014 73.0271701,114.86243 73.5833946,114.720561 C77.1792381,113.805397 79.350932,110.148505 78.4346395,106.552874 L71.2682109,78.4294626 C70.8312925,76.7152103 69.7247551,75.2320327 68.2081701,74.3238551 L52.4538503,64.8981542 C50.6916667,66.060514 47.7331973,66.7881308 43.6273469,67.0734813 Z"
+                        id="Path"
+                        fill="#FFFFFF"
+                      ></path>
+                      <path
+                        d="M39.3312517,67.2126636 L39.3215782,67.2126636 C38.1827959,67.2126636 37.1122653,67.1857944 36.0992381,67.1368925 L31.4806939,90.551215 L36.7742313,91.4787383 L39.2995442,77.0704206 L39.3237279,76.9656308 L41.87,91.4792757 L47.1624626,90.5501402 L42.5439184,67.1368925 C41.5335782,67.1857944 40.4662721,67.2126636 39.3312517,67.2126636 Z"
+                        id="Path"
+                        fill="#FBEC06"
+                      ></path>
+                      <path
+                        d="M39.3226531,66.1378976 C39.3248027,66.1378976 39.3280272,66.1378976 39.3312517,66.1378976 C49.6641293,66.1378976 51.7546735,64.0775701 52.2458707,63.7304206 L51.0984898,59.1481542 C51.0963401,59.149229 51.0941905,59.1503037 51.090966,59.1519159 C51.0802177,59.1572897 47.229102,60.7656776 39.3226531,60.7646028 C34.0629728,60.7646028 27.5973333,59.1755607 27.5602517,59.156215 C27.5548776,59.153528 27.5527279,59.1519159 27.5505782,59.1508411 C27.5484286,59.149229 27.5462789,59.1486916 27.5452041,59.1481542 L27.6091565,59.1868458 L26.398898,63.7304206 C26.8906327,64.0770327 28.9827891,66.138972 39.3226531,66.1378976 Z"
+                        id="Path"
+                        fill="#FBEC06"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <h5 class="combat__description-title">
+            Вы научитесь проводить:
+          </h5>
+
+          <ul class="combat__description-list">
+            <li class="item">- изломы</li>
+            <li class="item">- делать броски</li>
+            <li class="item">- вести бой на средней и дальней дистанции</li>
+            <li class="item">- выводить противника из равновесия</li>
+            <li class="item">- применять разнообразную ударную технику</li>
+          </ul>
+
+          <h5 class="combat__description-subtitle">
+            Будьте сильными и научитесь постоять за себя!
+          </h5>
+
+          <button class="button button--go">
+            Получить <span> бесплатное </span> занятие
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="group">
+      <div class="group__image">
+        <img src="images/group-bg.jpg" alt="" />
+      </div>
+
+      <div class="group__description">
+        <div class="group__description-image">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg
+            width="154px"
+            height="136px"
+            viewBox="0 0 154 136"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+            <title>Group</title>
+            <desc>Created with Sketch.</desc>
+            <g
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <g
+                id="Desktop-HD-Copy-2"
+                transform="translate(-749.000000, -5567.000000)"
+              >
+                <g
+                  id="noun_Martial-Arts_126784"
+                  transform="translate(749.000000, 5567.000000)"
+                >
+                  <g id="Group">
+                    <path
+                      d="M146.3805,30.5967595 C146.01125,27.9415696 143.927,25.8244051 141.18125,25.8244051 L79.82975,25.8244051 L90.433,36.4119747 L124.78375,36.4119747 L123.1335,38.5099241 L135.548,48.1891392 L137.79675,45.3295696 C138.138,47.8921772 138.50025,50.6242278 138.85375,53.2864051 L117.649,36.9534937 C117.649,36.9534937 116.0215,39.0444557 114.38875,41.1266835 C112.76825,43.2036709 112.52325,46.3427342 115.26025,48.5157975 L108.353,57.267443 L67.55875,16.4176962 L63.1575,20.5908861 C61.80825,21.9411899 61.01025,23.8627089 61.30075,25.8244051 C61.30075,25.8244051 48.35075,25.8244051 41.4155,25.8244051 C41.02525,25.8244051 39.85975,26.0462532 39.41525,26.2261772 C38.95675,26.4130886 38.07825,26.9668354 37.702,27.3389114 C29.31425,35.5996962 19.8765,44.8037722 13.923,50.6137468 C12.38125,52.1177722 11.914,54.4043797 12.726,56.3940253 C13.54325,58.3836709 15.4805,59.6868101 17.63475,59.6868101 L36.4035,59.6868101 L36.46825,75.0432405 C36.47175,76.2782532 36.73775,77.9814177 38.1255,79.2461266 C39.984,80.9457975 61.32,99.5740506 63.616,101.493823 C63.6055,105.969215 63.53725,129.231823 63.53725,129.231823 C63.53725,133.34562 66.6505,135.406886 69.727,135.406886 L75.7995,135.253165 L75.89925,98.6482278 C75.90275,96.8332658 75.0995,95.1073924 73.70125,93.9405063 L52.2165,75.9673165 L52.15525,59.6868101 L53.44325,59.6868101 C53.45025,59.6868101 53.45375,59.6833165 53.46075,59.6833165 C56.98525,59.6728354 58.74575,57.0351139 58.74575,54.3921519 C58.74575,51.7491899 58.74925,49.1009873 58.74925,49.1009873 C58.74925,49.1009873 32.50975,49.1009873 30.61975,49.1009873 C32.54125,47.2178987 34.5065,45.2963797 36.358,43.4849114 L36.372,47.1183291 L52.122,47.1183291 L52.0905,37.1666076 C52.0905,36.8975949 52.03625,36.6687595 52.01875,36.4119747 L70.1925,36.4119747 C70.1925,36.4119747 107.19625,73.413443 107.401,73.5724051 L107.2995,135.253165 L113.36675,135.406886 C116.44325,135.406886 119.553,133.34562 119.553,129.231823 L119.686,68.296962 L127.76225,58.0692405 L142.5515,69.6018481 C144.25075,70.9259494 146.58175,71.0936456 148.44725,70.0245823 C150.31625,68.9572658 151.35575,66.8680506 151.07225,64.7369114 C151.074,64.7351646 147.469,38.3998734 146.3805,30.5967595 Z"
+                      id="Path"
+                      fill="#0E0E0E"
+                    ></path>
+                    <path
+                      d="M144.214,1.40888608 C149.24175,1.40888608 153.33325,6.34893671 153.33325,12.4226835 C153.33325,18.4964304 149.24175,23.436481 144.214,23.436481 C139.18275,23.436481 135.09125,18.4964304 135.09125,12.4226835 C135.09125,6.34893671 139.18275,1.40888608 144.214,1.40888608 Z"
+                      id="Shape"
+                      fill="#FBEC06"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M2.08425,123.231443 C-0.4515,126.471823 0.728,130.010911 3.1535,131.900987 L8.03075,135.506456 L44.80175,88.0082532 L35.392,80.1265316 L2.08425,123.231443 Z"
+                      id="Path"
+                      fill="#0E0E0E"
+                    ></path>
+                    <path
+                      d="M47.19925,0.0166582278 C52.227,0.0166582278 56.3185,4.95670886 56.3185,11.0304557 C56.3185,17.1042025 52.227,22.0442532 47.19925,22.0442532 C42.168,22.0442532 38.0765,17.1042025 38.0765,11.0304557 C38.0765,4.95670886 42.168,0.0166582278 47.19925,0.0166582278 Z"
+                      id="Shape"
+                      fill="#FBEC06"
+                      fill-rule="nonzero"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <h3 class="group__description-title">
+          <b>Групповые тренировки у нас это:</b>
+        </h3>
+
+        <ul class="group__description-list">
+          <li class="item">- комфортабельный зал</li>
+          <li class="item">- малокомплектные группы</li>
+          <li class="item">- индивидуальный и разумный подход к каждому</li>
+          <li class="item">- дружный коллектив</li>
+        </ul>
+
+        <button class="button button--go">
+          Получить <span> бесплатное </span> занятие
+        </button>
+      </div>
+    </section>
+
+    <section class="individual">
+      <div class="title-box">
+        <h3 class="title">
+          Индивидуальные тренировки
+        </h3>
+      </div>
+
+      <div class="individual__video">
+        <!-- <iframe
+            width="1100"
+            height="655"
+            src="https://www.youtube.com/embed/69TSIsqACLY"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe> -->
+      </div>
+    </section>
+
+    <section class="cost">
+      <div class="title-box">
+        <h3 class="title">
+          Стоимость
+        </h3>
+      </div>
+
+      <ul class="cost__lists">
+        <div class="cost__list-item">
+          <p class="cost__list-title">Групповые тренировки:</p>
+          <ul class="cost__list">
+            <li class="item">1-ая тренировка <b>бесплатно</b></li>
+            <li class="item">1 месяц — <b>500грн.</b></li>
+            <li class="item">2 месяца — <b>900грн.</b></li>
+            <li class="item">3 месяца — <b>1200грн.</b></li>
+          </ul>
+        </div>
+
+        <div class="cost__list-item">
+          <p class="cost__list-title">Индивидуальные занятия:</p>
+          <p class="item">Приватное занятие — 400 грн/час</p>
+        </div>
+
+        <ul class="cost__list-item">
+          <p class="cost__list-title">Марафон:</p>
+          <ul class="cost__list">
+            <li class="item">Марафон 10 часов — <b>3500грн.</b></li>
+            <li class="item">Марафон 50 часов — <b>15000грн.</b></li>
+            <li class="item">Марафон 100 часов — <b>25000грн.</b></li>
+          </ul>
+        </ul>
+      </ul>
+      <div class="cost__img">
+        <img src="images/cost-bg.png" alt="" />
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="title-box">
+          <h3 class="title">
+            Вопросы и Ответы
+          </h3>
+        </div>
+
+        <div class="faq__accordion accordion">
+          <div class="accordion__item" id="question1">
+            <a href="#question1" class="accordion__link">
+              <div class="acccordion__icon">
+                <span class="icon--plus">+</span>
+                <span class="icon--minus">–</span>
+              </div>
+              С какого возраста я могу начать заниматься?
+            </a>
+
+            <div class="accordion__answer">
+              <p>
+                Мы проводим тренировки в малокомплектных группах, есть группы
+                для детей от 6 лет. И стандартная группа с 12 лет.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item" id="question2">
+            <a href="#question2" class="accordion__link">
+              <div class="acccordion__icon">
+                <span class="icon--plus">+</span>
+                <span class="icon--minus">–</span>
+              </div>
+              Контурная пластика, для кого?
+            </a>
+
+            <div class="accordion__answer">
+              <p>
+                Мы проводим тренировки в малокомплектных группах, есть группы
+                для детей от 6 лет. И стандартная группа с 12 лет.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item" id="question3">
+            <a href="#question3" class="accordion__link">
+              <div class="acccordion__icon">
+                <span class="icon--plus">+</span>
+                <span class="icon--minus">–</span>
+              </div>
+              Контурная пластика, для кого?
+            </a>
+
+            <div class="accordion__answer">
+              <p>
+                Мы проводим тренировки в малокомплектных группах, есть группы
+                для детей от 6 лет. И стандартная группа с 12 лет.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__description">
+        <div class="title-box">
+          <h3 class="title">
+            Контакты
+          </h3>
+        </div>
+
         <div class="main-header__address">
           <span class="main-header__marker">
             <?xml version="1.0" encoding="UTF-8"?>
@@ -50,12 +653,8 @@
             </svg>
           </span>
           <p>
-            г.Одесса, ул. Большая арнаутска 698
+            г.Одесса, ул. Большая арнаутская, 69
           </p>
-        </div>
-
-        <div class="main-header__logo">
-          <img src="/images/header-logo.png" alt="" />
         </div>
 
         <div class="main-header__tel">
@@ -65,645 +664,36 @@
           <a href="tel">+38 <span class="text-accent">(093)</span> 999 99 99</a>
         </div>
 
-        <div class="main-header__border-bottom">
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg
-            width="1440px"
-            height="30px"
-            viewBox="0 0 1440 30"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
-            <title>Path</title>
-            <desc>Created with Sketch.</desc>
-            <g
-              id="Page-1"
-              stroke="none"
-              stroke-width="1"
-              fill="none"
-              fill-rule="evenodd"
-            >
-              <g
-                id="Desktop-HD"
-                transform="translate(0.000000, -167.000000)"
-                stroke="#FFFFFF"
-              >
-                <path
-                  d="M0,168 C422.817324,168 649.50627,168 680.066837,168 C711.323052,205.333333 745.082497,205.333333 781.345174,168 L1440,168"
-                  id="Path"
-                ></path>
-              </g>
-            </g>
-          </svg>
-        </div>
-
-        <div class="main-header__button">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </header>
-
-      <section class="intro">
-        <div class="intro__bg">
-          <img src="images/intro-bg.png" alt="" />
-        </div>
-        <div class="intro__description">
-          <h1 class="intro__title">
-            <span class="text-accent">Вин-чун </span>Кунг-фу
-          </h1>
-
-          <h2 class="intro__subtitle">
-            Мастера <span>Токана Игоря Владимировича.</span>
-          </h2>
-
-          <div class="intro__buttons">
-            <button class="button button--more" type="button">Подробнее</button>
-            <button class="button button--go" type="button">Записаться</button>
-          </div>
-
-          <p class="intro__text">
-            Групповые и индивидуальные тренировки для мужчин, женщин и детей.
-          </p>
-        </div>
-
-        <div class="intro__scroll">
-          <div class="scroll-img"></div>
-          <span class="scroll-text">скрольте вниз</span>
-        </div>
-      </section>
-
-      <section class="about" id="about">
-        <div class="about__description">
-          <div class="title-box">
-            <h3 class="title">
-              о мастере
-            </h3>
-          </div>
-
-          <p class="about__biography">
-            Токан Игорь Владимирович, родился и вырос в городе Одессе. Своё
-            изучение стиля Вин Чун начал в 1992 году. Имеет опыт преподавания
-            более 20 лет. За это время, воспитал ряд учеников, которые преподают
-            в Украине и за рубежом.
-          </p>
-        </div>
-
-        <div class="about__img">
-          <img src="images/about-img.png" alt="" />
-        </div>
-      </section>
-
-      <section class="style">
-        <div class="title-box">
-          <h3 class="title">
-            о стиле
-          </h3>
-        </div>
-
-        <h3 class="style-subtitle">
-          Вин Чун — это боевое искусство, которое включает в себя 3 больших
-          раздела.
-        </h3>
-
-        <div class="style__mode">
-          <div class="style__mode-img">
-            <img src="images/style-1.png" alt="" />
-          </div>
-          <div class="style__mode-description description--1">
-            <div class="style__mode-number">
-              <img src="images/number.png" alt="" />
-            </div>
-            <span class="style__mode-description-text"
-              >Первый раздел — это навык <br />
-              ведения боя и самообороны.</span
-            >
-          </div>
-        </div>
-
-        <div class="style__mode">
-          <div class="style__mode-description description--2">
-            <div class="style__mode-number">
-              <img src="images/number.png" alt="" />
-              <img src="images/number.png" alt="" />
-            </div>
-            <span class="style__mode-description-text">
-              Второй раздел – это цигун. Он отвечает за физическое и психическое
-              здоровье практикующего.
-            </span>
-          </div>
-
-          <div class="style__mode-img">
-            <img src="images/style-2.png" alt="" />
-          </div>
-        </div>
-
-        <div class="style__mode">
-          <div class="style__mode-img">
-            <img src="images/style-3.png" alt="" />
-          </div>
-          <div class="style__mode-description description--3">
-            <div class="style__mode-number">
-              <img src="images/number.png" alt="" />
-              <img src="images/number.png" alt="" />
-              <img src="images/number.png" alt="" />
-            </div>
-            <span class="style__mode-description-text"
-              >Третий раздел — работа с психикой, которая постоянно подвергается
-              стрессу в повседневной жизни, её равновесием и балансом <br />
-              ведения боя и самообороны.</span
-            >
-          </div>
-        </div>
-      </section>
-
-      <section class="healh">
-        <div class="title-box">
-          <h3 class="title">
-            Здоровье и цигун
-          </h3>
-        </div>
-        <h5 class="health__subtitle">
-          Скажите нет болезням и плохому настроению!
-        </h5>
-
-        <div class="health__description">
-          <div class="health__description--left-side">
-            <h4 class="health__description-title">
-              Изучайте цигун с нами и вы получите:
-            </h4>
-
-            <div class="health__description-image">
-              <img src="images/health-1.jpg" alt="" />
-            </div>
-          </div>
-
-          <div class="health__description--right-side">
-            <div class="health__description-img">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg
-                width="106px"
-                height="90px"
-                viewBox="0 0 106 90"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
-                <title>Group</title>
-                <desc>Created with Sketch.</desc>
-                <g
-                  id="Page-1"
-                  stroke="none"
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
-                >
-                  <g
-                    id="Desktop-HD-Copy-5"
-                    transform="translate(-743.000000, -3375.000000)"
-                  >
-                    <g
-                      id="health"
-                      transform="translate(744.000000, 3375.000000)"
-                    >
-                      <g id="Group">
-                        <polygon
-                          id="Path-2"
-                          stroke="#FBEC06"
-                          stroke-width="6"
-                          points="1.98951966e-13 43.0747667 29.7463713 43.1682561 34.3302656 29.9793043 40.9148382 56.4029852 46.2437051 43.8856334 55.2855372 43.8856334 59.3002309 29.9793043 67.0724975 56.4029852 73.3631868 43.1911448 104 43.0747667"
-                        ></polygon>
-                        <path
-                          d="M59.0406729,38.4830769 L66.82624,61.5233192 L74.0205093,45.5553808 L85.1215964,45.5553808 L85.1215964,45.5154 L103.998902,45.5154 L103.998902,49.9172308 L92.3752844,49.9172308 C79.6257742,72.1963154 51.9317298,89.9573077 51.9317298,89.9573077 C51.9317298,89.9573077 24.2376738,72.1963038 11.4881751,49.9172192 L11.4881751,49.9172192 L0.00109777778,49.9172192 L0.00109777778,45.5154 L19.7782116,45.5154 L19.7782116,45.5553808 L31.7674702,45.5553808 L34.5447093,39.0642577 L41.1847858,60.4741038 L47.8591591,45.6794885 L56.901,45.6794885 L59.0406729,38.4830769 Z M72.1753298,0.0426923077 C84.5661324,0.0426923077 97.564376,9.06624231 98.6193636,27.3404654 C98.8264904,32.0430057 98.0898676,36.7394329 96.4528124,41.1535731 L96.4528124,41.1535731 L71.1698924,41.1535731 L67.4130773,49.4918192 L58.772168,23.9200962 L53.6112258,41.2776231 L45.0098711,41.2776231 L41.9498676,48.0607615 L35.2054213,26.3150192 L28.8571342,41.1535731 L7.41064711,41.1535615 C5.77360643,36.7394185 5.03699935,32.0429911 5.24414222,27.3404538 C6.29908356,9.06623077 19.2973387,0.0426923077 31.6881298,0.0426923077 C40.6295991,0.0426923077 48.3260613,6.42323077 51.9317298,15.6310385 C55.5373982,6.42323077 63.2338489,0.0426923077 72.1753298,0.0426923077 Z"
-                          id="Path-3"
-                          fill="#000000"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <ul class="health__description-list">
-              <li class="item">- крепкое здоровье</li>
-              <li class="item">- лишний вес уйдёт</li>
-              <li class="item">- Ваше настроение улучшиться</li>
-              <li class="item">- Ваш организм «Омолодиться»</li>
-              <li class="item">
-                - Вы станете более энергичными и оптимистичными
-              </li>
-            </ul>
-
-            <div class="health__description-image">
-              <img src="images/health-2.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="combat">
-        <div class="title-box">
-          <h3 class="title">
-            Навык ведения боя, и самооборона
-          </h3>
-        </div>
-
-        <div class="flex-container">
-          <div class="combat__video">
-            <iframe
-              width="483"
-              height="666"
-              src="https://www.youtube.com/embed/69TSIsqACLY"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <div class="combat__description">
-            <div class="combat__description-img">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg
-                width="79px"
-                height="115px"
-                viewBox="0 0 79 115"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
-                <title>Group</title>
-                <desc>Created with Sketch.</desc>
-                <g
-                  id="Page-1"
-                  stroke="none"
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
-                >
-                  <g
-                    id="Desktop-HD-Copy-2"
-                    transform="translate(-760.000000, -4813.000000)"
-                  >
-                    <g
-                      id="wushu"
-                      transform="translate(760.000000, 4813.000000)"
-                    >
-                      <g id="Group">
-                        <ellipse
-                          id="Oval"
-                          fill="#FFFFFF"
-                          cx="39.3226531"
-                          cy="12.0911215"
-                          rx="12.0918367"
-                          ry="12.0911215"
-                        ></ellipse>
-                        <path
-                          d="M5.06083673,114.720023 C5.61706122,114.861893 6.17543537,114.929603 6.72413605,114.929603 C9.72291156,114.93014 12.4551293,112.907967 13.2300816,109.869065 L19.7102313,84.4304206 L33.1826871,76.3707477 L35.0163469,67.0734813 C30.911034,66.7881308 27.953102,66.060514 26.1919932,64.8976168 L10.4355238,74.3233178 C8.91732653,75.2325701 7.81132653,76.7157477 7.37494558,78.4294626 L0.209591837,106.552874 C-0.706163265,110.148505 1.46606803,113.804322 5.06083673,114.720023 Z"
-                          id="Path"
-                          fill="#FFFFFF"
-                        ></path>
-                        <path
-                          d="M50.6733946,58.1615187 L51.1242857,57.9750467 L52.4989932,44.6108645 C52.8101565,45.0644159 53.132068,45.5125935 53.4668776,45.9500234 C54.889415,47.7647664 56.4457687,49.4811682 58.7706259,50.6413785 C59.3580204,50.9251168 59.998619,51.0675234 60.6402925,51.0675234 C61.2373605,51.0675234 61.8355034,50.9439252 62.3906531,50.6961916 C63.5412585,50.183528 64.4183197,49.176472 64.7697891,47.9673598 C64.8740476,47.6083879 65.9467279,43.7236449 65.9456539,36.5248598 C65.9456539,33.5692523 65.7650816,30.0574533 65.2658231,26.0034346 C64.9750816,23.646472 62.8307959,21.971986 60.4731565,22.2621729 C58.1160544,22.5518224 56.4420068,24.6975935 56.7316735,27.0534813 C57.1562313,30.5029439 57.3233673,33.4800467 57.3443265,35.9761916 C56.9573878,35.2448131 56.5983946,34.5236449 56.2807823,33.8524533 C55.7535782,32.7432944 55.3263333,31.7636449 55.0361293,31.0714953 C54.8915646,30.7248832 54.7803197,30.4508178 54.7077687,30.2681075 C54.6341429,30.0843224 54.6056599,30.0112383 54.6056599,30.0101636 C53.8978844,28.1561916 52.045415,27.0798131 50.1617755,27.2700467 C50.0118367,27.2539252 49.8592109,27.243715 49.7049728,27.243715 L28.9419456,27.243715 C28.7871701,27.243715 28.6345442,27.2539252 28.484068,27.2700467 C26.5993537,27.0803505 24.7468844,28.1556542 24.0391088,30.0101636 C24.0391088,30.0101636 24.0294354,30.0348832 23.9982653,30.1149533 C23.785449,30.658785 22.745551,33.2360748 21.2999048,35.9772664 C21.3208639,33.4795093 21.4874626,30.5040187 21.9141701,27.0545561 C22.2049116,24.6992056 20.5308639,22.5523598 18.1737619,22.2610981 C15.8182721,21.9698364 13.6712993,23.6443224 13.3800204,26.0007477 C12.8786122,30.0574533 12.6985782,33.5714019 12.6985782,36.526472 C12.6985782,43.725257 13.7707211,47.6083879 13.875517,47.9657477 C14.2259116,49.176472 15.1029728,50.1824533 16.2535782,50.6956542 C16.8081905,50.9428505 17.4057959,51.0659112 18.0039388,51.0659112 C18.6450748,51.0659112 19.2867483,50.9235047 19.8741429,50.6403037 C22.199,49.4806308 23.7542789,47.7647664 25.1778912,45.949486 C25.5137755,45.5099065 25.8340748,45.0579673 26.1473878,44.601729 L27.5301565,58.0540421 C29.5674966,58.5113551 35.2178776,59.6876882 39.3221156,59.6876882 C46.8916054,59.6892991 50.6368503,58.176028 50.6733946,58.1615187 Z"
-                          id="Path"
-                          fill="#FFFFFF"
-                        ></path>
-                        <path
-                          d="M43.6273469,67.0734813 L45.4615442,76.3702103 L58.9329252,84.4298832 L65.4152245,109.869065 C66.1885646,112.90743 68.9218571,114.929603 71.9195578,114.93014 C72.4693333,114.93014 73.0271701,114.86243 73.5833946,114.720561 C77.1792381,113.805397 79.350932,110.148505 78.4346395,106.552874 L71.2682109,78.4294626 C70.8312925,76.7152103 69.7247551,75.2320327 68.2081701,74.3238551 L52.4538503,64.8981542 C50.6916667,66.060514 47.7331973,66.7881308 43.6273469,67.0734813 Z"
-                          id="Path"
-                          fill="#FFFFFF"
-                        ></path>
-                        <path
-                          d="M39.3312517,67.2126636 L39.3215782,67.2126636 C38.1827959,67.2126636 37.1122653,67.1857944 36.0992381,67.1368925 L31.4806939,90.551215 L36.7742313,91.4787383 L39.2995442,77.0704206 L39.3237279,76.9656308 L41.87,91.4792757 L47.1624626,90.5501402 L42.5439184,67.1368925 C41.5335782,67.1857944 40.4662721,67.2126636 39.3312517,67.2126636 Z"
-                          id="Path"
-                          fill="#FBEC06"
-                        ></path>
-                        <path
-                          d="M39.3226531,66.1378976 C39.3248027,66.1378976 39.3280272,66.1378976 39.3312517,66.1378976 C49.6641293,66.1378976 51.7546735,64.0775701 52.2458707,63.7304206 L51.0984898,59.1481542 C51.0963401,59.149229 51.0941905,59.1503037 51.090966,59.1519159 C51.0802177,59.1572897 47.229102,60.7656776 39.3226531,60.7646028 C34.0629728,60.7646028 27.5973333,59.1755607 27.5602517,59.156215 C27.5548776,59.153528 27.5527279,59.1519159 27.5505782,59.1508411 C27.5484286,59.149229 27.5462789,59.1486916 27.5452041,59.1481542 L27.6091565,59.1868458 L26.398898,63.7304206 C26.8906327,64.0770327 28.9827891,66.138972 39.3226531,66.1378976 Z"
-                          id="Path"
-                          fill="#FBEC06"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </div>
-
-            <h5 class="combat__description-title">
-              Вы научитесь проводить:
-            </h5>
-
-            <ul class="combat__description-list">
-              <li class="item">- изломы</li>
-              <li class="item">- делать броски</li>
-              <li class="item">- вести бой на средней и дальней дистанции</li>
-              <li class="item">- выводить противника из равновесия</li>
-              <li class="item">- применять разнообразную ударную технику</li>
-            </ul>
-
-            <h5 class="combat__description-subtitle">
-              Будьте сильными и научитесь постоять за себя!
-            </h5>
-
-            <button class="button button--go">
-              Получить <span> бесплатное </span> занятие
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="group">
-        <div class="group__image">
-          <img src="images/group-bg.jpg" alt="" />
-        </div>
-
-        <div class="group__description">
-          <div class="group__description-image">
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg
-              width="154px"
-              height="136px"
-              viewBox="0 0 154 136"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
-              <title>Group</title>
-              <desc>Created with Sketch.</desc>
-              <g
-                id="Page-1"
-                stroke="none"
-                stroke-width="1"
-                fill="none"
-                fill-rule="evenodd"
-              >
-                <g
-                  id="Desktop-HD-Copy-2"
-                  transform="translate(-749.000000, -5567.000000)"
-                >
-                  <g
-                    id="noun_Martial-Arts_126784"
-                    transform="translate(749.000000, 5567.000000)"
-                  >
-                    <g id="Group">
-                      <path
-                        d="M146.3805,30.5967595 C146.01125,27.9415696 143.927,25.8244051 141.18125,25.8244051 L79.82975,25.8244051 L90.433,36.4119747 L124.78375,36.4119747 L123.1335,38.5099241 L135.548,48.1891392 L137.79675,45.3295696 C138.138,47.8921772 138.50025,50.6242278 138.85375,53.2864051 L117.649,36.9534937 C117.649,36.9534937 116.0215,39.0444557 114.38875,41.1266835 C112.76825,43.2036709 112.52325,46.3427342 115.26025,48.5157975 L108.353,57.267443 L67.55875,16.4176962 L63.1575,20.5908861 C61.80825,21.9411899 61.01025,23.8627089 61.30075,25.8244051 C61.30075,25.8244051 48.35075,25.8244051 41.4155,25.8244051 C41.02525,25.8244051 39.85975,26.0462532 39.41525,26.2261772 C38.95675,26.4130886 38.07825,26.9668354 37.702,27.3389114 C29.31425,35.5996962 19.8765,44.8037722 13.923,50.6137468 C12.38125,52.1177722 11.914,54.4043797 12.726,56.3940253 C13.54325,58.3836709 15.4805,59.6868101 17.63475,59.6868101 L36.4035,59.6868101 L36.46825,75.0432405 C36.47175,76.2782532 36.73775,77.9814177 38.1255,79.2461266 C39.984,80.9457975 61.32,99.5740506 63.616,101.493823 C63.6055,105.969215 63.53725,129.231823 63.53725,129.231823 C63.53725,133.34562 66.6505,135.406886 69.727,135.406886 L75.7995,135.253165 L75.89925,98.6482278 C75.90275,96.8332658 75.0995,95.1073924 73.70125,93.9405063 L52.2165,75.9673165 L52.15525,59.6868101 L53.44325,59.6868101 C53.45025,59.6868101 53.45375,59.6833165 53.46075,59.6833165 C56.98525,59.6728354 58.74575,57.0351139 58.74575,54.3921519 C58.74575,51.7491899 58.74925,49.1009873 58.74925,49.1009873 C58.74925,49.1009873 32.50975,49.1009873 30.61975,49.1009873 C32.54125,47.2178987 34.5065,45.2963797 36.358,43.4849114 L36.372,47.1183291 L52.122,47.1183291 L52.0905,37.1666076 C52.0905,36.8975949 52.03625,36.6687595 52.01875,36.4119747 L70.1925,36.4119747 C70.1925,36.4119747 107.19625,73.413443 107.401,73.5724051 L107.2995,135.253165 L113.36675,135.406886 C116.44325,135.406886 119.553,133.34562 119.553,129.231823 L119.686,68.296962 L127.76225,58.0692405 L142.5515,69.6018481 C144.25075,70.9259494 146.58175,71.0936456 148.44725,70.0245823 C150.31625,68.9572658 151.35575,66.8680506 151.07225,64.7369114 C151.074,64.7351646 147.469,38.3998734 146.3805,30.5967595 Z"
-                        id="Path"
-                        fill="#0E0E0E"
-                      ></path>
-                      <path
-                        d="M144.214,1.40888608 C149.24175,1.40888608 153.33325,6.34893671 153.33325,12.4226835 C153.33325,18.4964304 149.24175,23.436481 144.214,23.436481 C139.18275,23.436481 135.09125,18.4964304 135.09125,12.4226835 C135.09125,6.34893671 139.18275,1.40888608 144.214,1.40888608 Z"
-                        id="Shape"
-                        fill="#FBEC06"
-                        fill-rule="nonzero"
-                      ></path>
-                      <path
-                        d="M2.08425,123.231443 C-0.4515,126.471823 0.728,130.010911 3.1535,131.900987 L8.03075,135.506456 L44.80175,88.0082532 L35.392,80.1265316 L2.08425,123.231443 Z"
-                        id="Path"
-                        fill="#0E0E0E"
-                      ></path>
-                      <path
-                        d="M47.19925,0.0166582278 C52.227,0.0166582278 56.3185,4.95670886 56.3185,11.0304557 C56.3185,17.1042025 52.227,22.0442532 47.19925,22.0442532 C42.168,22.0442532 38.0765,17.1042025 38.0765,11.0304557 C38.0765,4.95670886 42.168,0.0166582278 47.19925,0.0166582278 Z"
-                        id="Shape"
-                        fill="#FBEC06"
-                        fill-rule="nonzero"
-                      ></path>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </div>
-          <h3 class="group__description-title">
-            <b>Групповые тренировки у нас это:</b>
-          </h3>
-
-          <ul class="group__description-list">
-            <li class="item">- комфортабельный зал</li>
-            <li class="item">- малокомплектные группы</li>
-            <li class="item">- индивидуальный и разумный подход к каждому</li>
-            <li class="item">- дружный коллектив</li>
-          </ul>
-
-          <button class="button button--go">
-            Получить <span> бесплатное </span> занятие
-          </button>
-        </div>
-      </section>
-
-      <section class="individual">
-        <div class="title-box">
-          <h3 class="title">
-            Индивидуальные тренировки
-          </h3>
-        </div>
-
-        <div class="individual__video">
-          <iframe
-            width="1100"
-            height="655"
-            src="https://www.youtube.com/embed/69TSIsqACLY"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-
-      <section class="cost">
-        <div class="title-box">
-          <h3 class="title">
-            Стоимость
-          </h3>
-        </div>
-
-        <ul class="cost__lists">
-          <div class="cost__list-item">
-            <p class="cost__list-title">Групповые тренировки:</p>
-            <ul class="cost__list">
-              <li class="item">1-ая тренировка <b>бесплатно</b></li>
-              <li class="item">1 месяц — <b>500грн.</b></li>
-              <li class="item">2 месяца — <b>900грн.</b></li>
-              <li class="item">3 месяца — <b>1200грн.</b></li>
-            </ul>
-          </div>
-
-          <div class="cost__list-item">
-            <p class="cost__list-title">Индивидуальные занятия:</p>
-            <p class="item">Приватное занятие — 400 грн/час</p>
-          </div>
-
-          <ul class="cost__list-item">
-            <p class="cost__list-title">Марафон:</p>
-            <ul class="cost__list">
-              <li class="item">Марафон 10 часов — <b>3500грн.</b></li>
-              <li class="item">Марафон 50 часов — <b>15000грн.</b></li>
-              <li class="item">Марафон 100 часов — <b>25000грн.</b></li>
-            </ul>
-          </ul>
+        <ul class="contacts__socials-list">
+          <li class="item">
+            <a href=""><img src="images/whatsapp-icon.png" alt=""/></a>
+          </li>
+          <li class="item">
+            <a href=""><img src="images/viber-icon.png" alt=""/></a>
+          </li>
+          <li class="item">
+            <a href=""><img src="images/youtube-icon.png" alt=""/></a>
+          </li>
+          <li class="item">
+            <a href=""><img src="images/instagram-icon.png" alt=""/></a>
+          </li>
         </ul>
-        <div class="cost__img">
-          <img src="images/cost-bg.png" alt="" />
-        </div>
-      </section>
+      </div>
+      <div class="contacts__map">
+        <img src="images/map.png" alt="" />
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="footer__logo">
+        <img src="images/footer-logo.png" alt="" />
+      </div>
 
-      <section class="faq">
-        <div class="container">
-          <div class="title-box">
-            <h3 class="title">
-              Вопросы и Ответы
-            </h3>
-          </div>
+      <div class="footer__copyrights">
+        © All Rights Reserved 2020
+      </div>
+    </footer>
 
-          <div class="faq__accordion accordion">
-            <div class="accordion__item" id="question1">
-              <a href="#question1" class="accordion__link">
-                <div class="acccordion__icon">
-                  <span class="icon--plus">+</span>
-                  <span class="icon--minus">–</span>
-                </div>
-                С какого возраста я могу начать заниматься?
-              </a>
-
-              <div class="accordion__answer">
-                <p>
-                  Мы проводим тренировки в малокомплектных группах, есть группы
-                  для детей от 6 лет. И стандартная группа с 12 лет.
-                </p>
-              </div>
-            </div>
-
-            <div class="accordion__item" id="question2">
-              <a href="#question2" class="accordion__link">
-                <div class="acccordion__icon">
-                  <span class="icon--plus">+</span>
-                  <span class="icon--minus">–</span>
-                </div>
-                Контурная пластика, для кого?
-              </a>
-
-              <div class="accordion__answer">
-                <p>
-                  Мы проводим тренировки в малокомплектных группах, есть группы
-                  для детей от 6 лет. И стандартная группа с 12 лет.
-                </p>
-              </div>
-            </div>
-
-            <div class="accordion__item" id="question3">
-              <a href="#question3" class="accordion__link">
-                <div class="acccordion__icon">
-                  <span class="icon--plus">+</span>
-                  <span class="icon--minus">–</span>
-                </div>
-                Контурная пластика, для кого?
-              </a>
-
-              <div class="accordion__answer">
-                <p>
-                  Мы проводим тренировки в малокомплектных группах, есть группы
-                  для детей от 6 лет. И стандартная группа с 12 лет.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contacts">
-        <div class="contacts__description">
-          <div class="title-box">
-            <h3 class="title">
-              Контакты
-            </h3>
-          </div>
-
-          <div class="main-header__address">
-            <span class="main-header__marker">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg
-                width="23px"
-                height="33px"
-                viewBox="0 0 23 33"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
-                <title>Shape</title>
-                <desc>Created with Sketch.</desc>
-                <g
-                  id="Page-1"
-                  stroke="none"
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
-                >
-                  <g
-                    id="Desktop-HD"
-                    transform="translate(-78.000000, -71.000000)"
-                    fill="#FBEC06"
-                    fill-rule="nonzero"
-                  >
-                    <path
-                      d="M101,82.4316203 C101,76.1181107 95.8512745,71 89.5,71 C83.1487255,71 78,76.1181107 78,82.4316203 C78,82.6243236 78.0048245,82.8158642 78.0144734,83.0062423 C78.0051169,83.1966203 78.0002924,83.388161 78,83.5808643 C78.0004386,89.8938585 89.5002193,104 89.5002193,104 C89.5002193,104 101,89.8938585 101,83.5804283 C101,83.387725 100.995176,83.1961844 100.985527,83.0058063 C100.994883,82.8157189 100.999708,82.6243236 101,82.4316203 Z M89.5000804,88 C87.2755294,88 85.2700306,86.7817624 84.418774,84.9133673 C83.5675174,83.0449722 84.0381501,80.8943823 85.6112098,79.4644455 C87.1842695,78.0345087 89.5499571,77.6068377 91.6051217,78.3808608 C93.6602864,79.154884 95.0001828,80.9781649 95,83.000484 C94.9997504,85.7617069 92.5374256,88 89.5000804,88 Z"
-                      id="Shape"
-                    ></path>
-                  </g>
-                </g>
-              </svg>
-            </span>
-            <p>
-              г.Одесса, ул. Большая арнаутская, 69
-            </p>
-          </div>
-
-          <div class="main-header__tel">
-            <div class="main-header__tel-img">
-              <img src="images/tel.png" alt="" />
-            </div>
-            <a href="tel"
-              >+38 <span class="text-accent">(093)</span> 999 99 99</a
-            >
-          </div>
-
-          <ul class="contacts__socials-list">
-            <li class="item">
-              <a href=""><img src="images/whatsapp-icon.png" alt=""/></a>
-            </li>
-            <li class="item">
-              <a href=""><img src="images/viber-icon.png" alt=""/></a>
-            </li>
-            <li class="item">
-              <a href=""><img src="images/youtube-icon.png" alt=""/></a>
-            </li>
-            <li class="item">
-              <a href=""><img src="images/instagram-icon.png" alt=""/></a>
-            </li>
-          </ul>
-        </div>
-        <div class="contacts__map">
-          <img src="images/map.png" alt="" />
-        </div>
-      </section>
-      <footer class="main-footer">
-        <div class="footer__logo">
-          <img src="images/footer-logo.png" alt="" />
-        </div>
-
-        <div class="footer__copyrights">
-          © All Rights Reserved 2020
-        </div>
-      </footer>
-    </div>
-
-    <script
+    <!-- <script
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
     ></script>
@@ -716,6 +706,6 @@
           $("body,html").animate({ scrollTop: top }, 1500);
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>
