@@ -1,26 +1,46 @@
 .about {
+  padding-bottom: 100px;
   position: relative;
   display: flex;
   justify-content: space-around;
-  width: 100%;
   background-color: #fff;
   background-image: url("../../../images/about-bg.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 4;
-  padding-bottom: 100px;
+  background-position: left 0;
+  z-index: 2;
   @include skewTop;
   @include skewBottom;
+  @include paddingSections;
+
+  // @media screen and (max-width: 1300px) {
+  //   justify-content: space-between;
+  //   padding-right: 40px;
+  //   padding-left: 40px;
+  // }
+
+  // @media screen and (max-width: 1160px) {
+  //   flex-direction: column;
+  //   align-items: center;
+
+  //   .about__description {
+  //     order: 5;
+  //   }
+  // }
 }
 
 .about__description {
   margin-top: 130px;
 }
 
-
 .about__biography {
   margin-top: 20px;
   max-width: 593px;
   line-height: 35px;
   color: #000;
+}
+
+.about__img {
+  img {
+    background-position: right center;
+  }
 }

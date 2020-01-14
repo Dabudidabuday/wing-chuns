@@ -1,6 +1,8 @@
 .individual {
-  background-color: #000;
-  padding: 50px 70px 50px 70px;
+  position: relative;
+  background: $bgDark;
+  @include paddingSections;
+  @include skewTop;
 
   .title-box {
     display: block;

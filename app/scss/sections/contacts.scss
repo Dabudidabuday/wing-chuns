@@ -1,8 +1,12 @@
 .contacts {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 60px 80px 45px 125px;
-  background-color: #000;
+  background: $bgDark;
+  @include paddingSections;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include skewTop;
 
   .title-box {
     margin-bottom: 60px;
@@ -19,6 +23,14 @@
   .main-header__tel {
     margin-bottom: 25px;
   }
+
+  @media screen and (max-width: 1160px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .contacts__socials-list {
@@ -28,5 +40,24 @@
 
   .item:not(:first-child) {
     margin-left: 30px;
+  }
+
+  @media screen and (max-width: 1160px) {
+    margin-bottom: 60px;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 660px) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__map {
+  border-radius: 8px;
+  box-shadow: 0 5px 25px 1px rgba(171, 171, 171, 0.6);
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 }

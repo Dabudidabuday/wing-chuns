@@ -1,12 +1,13 @@
 .main-header {
   position: relative;
-  padding: 0 70px 0 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 170px;
+  min-height: 140px;
   background-color: #0f0e2b;
   z-index: 5;
+  @include paddingSections;
+  padding-top: 0;
 }
 
 .main-header__address {
@@ -56,7 +57,7 @@
     margin-bottom: 5px;
     width: 28px;
     height: 4px;
-    background-color: #fbec06;
+    background-color: $yellow;
     border-radius: 5px;
   }
 }

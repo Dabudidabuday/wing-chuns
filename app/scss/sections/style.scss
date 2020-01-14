@@ -2,7 +2,10 @@
   position: relative;
   padding-top: 110px;
   padding-bottom: 50px;
-  background-color: #000;
+  background: linear-gradient(to right, #000000, #050213);
+  // background-image: url("../../../images/style-bg.png");
+  // background-repeat: no-repeat;
+  // background-size: contain;
   height: auto;
   text-align: center;
 
@@ -36,7 +39,7 @@
     content: "";
     position: absolute;
     bottom: -10px;
-    right: 12%;
+    right: 13%;
     width: 284px;
     height: 2px;
     background-color: #fbec06;
