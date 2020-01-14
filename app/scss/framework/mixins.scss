@@ -33,9 +33,13 @@
   }
 }
 
-
 @mixin paddingSections {
   padding-top: 20px;
   padding-right: 70px;
   padding-left: 70px;
+}
+
+@mixin flexContainer ($direction) {
+  display: flex;
+  flex-direction: $direction;
 }
