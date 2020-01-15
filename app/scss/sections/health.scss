@@ -29,7 +29,7 @@
 
 .health__description {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media screen and (max-width: 1370px) {
     display: flex;
