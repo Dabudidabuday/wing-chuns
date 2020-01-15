@@ -1,7 +1,7 @@
 .container {
-  max-width: 1440px;
+  max-width: calc(#{$baseContainerWidth} - (#{$baseContainerPadding} * 2));
   width: 100%;
-  padding: 0 16px;
+  padding: 0 $baseContainerPadding;
   margin: 0 auto;
 }
 
@@ -51,7 +51,9 @@
 }
 
 // ----- Justify-content
-@each $type in (center, space-between, space-around, flex-start, flex-end, left, right) {
+@each $type
+  in (center, space-between, space-around, flex-start, flex-end, left, right)
+{
   .jc-#{$type} {
     justify-content: $type;
   }
