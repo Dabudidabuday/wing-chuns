@@ -1,9 +1,6 @@
 .contacts {
   position: relative;
-  display: flex;
-  justify-content: space-between;
   background: $bgDark;
-  @include paddingSections;
   padding-top: 50px;
   padding-bottom: 50px;
   @include skewTop;
