@@ -4,30 +4,39 @@
   background-color: #fff;
   background-image: url("../../../images/about-bg.png");
   background-repeat: no-repeat;
-  background-position: left 0;
+  background-position: left;
+  background-size: contain;
   z-index: 2;
   @include skewTop;
   @include skewBottom;
-  @include paddingSections;
 
-  // @media screen and (max-width: 1300px) {
-  //   justify-content: space-between;
-  //   padding-right: 40px;
-  //   padding-left: 40px;
-  // }
+  @media screen and (max-width: 1082px) {
+    background-position: top;
 
-  // @media screen and (max-width: 1160px) {
-  //   flex-direction: column;
-  //   align-items: center;
+    .flex-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-  //   .about__description {
-  //     order: 5;
-  //   }
-  // }
+    .title-box {
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 555px) {
+    .title {
+      font-size: 46px;
+    }
+  }
 }
 
 .about__description {
   margin-top: 130px;
+
+  @media screen and (max-width: 1082px) {
+    margin-top: 30px;
+  }
 }
 
 .about__biography {
@@ -35,10 +44,26 @@
   max-width: 593px;
   line-height: 35px;
   color: #000;
+
+  @media screen and (max-width: 555px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 502px) {
+    font-size: 14px;
+  }
 }
 
 .about__img {
+  width: 50%;
+
   img {
     background-position: right center;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1082px) {
+    margin-top: 30px;
+    width: 100%;
   }
 }

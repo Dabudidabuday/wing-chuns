@@ -29,7 +29,8 @@
 
 .health__description {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
 
   @media screen and (max-width: 1370px) {
     display: flex;
@@ -63,8 +64,6 @@
 }
 
 .health__description-list {
-  // margin-top:px;
-
   .item {
     color: #000;
     font-size: 26px;
