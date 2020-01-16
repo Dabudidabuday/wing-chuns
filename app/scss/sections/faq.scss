@@ -2,12 +2,30 @@
   padding-top: 70px;
   padding-bottom: 80px;
 
+  .title {
+    text-transform: initial;
+  }
+
   @media screen and (max-width: 1160px) {
     padding-bottom: 40px;
   }
 
+  @media screen and (max-width: 1000px) {
+    text-align: center;
+  }
+
   @media screen and (max-width: 600px) {
     padding-bottom: 20px;
+
+    .title {
+      font-size: 38px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 34px;
+    }
   }
 }
 

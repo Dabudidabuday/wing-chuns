@@ -47,6 +47,13 @@
 
     .health__description--right-side {
       order: -1;
+      // text-align: center;
+
+      .health__description-title {
+        font-size: 28px;
+        font-family: $fontBold;
+        margin-bottom: 30px;
+      }
     }
 
     .health__description--left-side {
@@ -82,7 +89,6 @@
     }
   }
 }
-
 
 .health__description-list {
   .item {

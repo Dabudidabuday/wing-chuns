@@ -1,8 +1,6 @@
 .cost {
   position: relative;
   background: $bgDark;
-  height: auto;
-  @include paddingSections;
   padding-bottom: 50px;
   @include skewBottom;
 
@@ -15,22 +13,11 @@
     }
   }
 
-  @media screen and (max-width: 1259px) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+  @media screen and(max-width: 1000px) {
+    text-align: center;
 
-  @media screen and (max-width: 1139px) {
     .title-box {
-      display: block;
-      margin: 50px auto;
-      text-align: center;
-      max-width: 259px;
-      width: 100%;
-
-      .title {
-        margin: 0 auto;
-      }
+      margin: 50px 0;
     }
   }
 }
@@ -41,6 +28,14 @@
   line-height: 52px;
   color: $yellow;
   font-weight: 800;
+
+  @media screen and(max-width: 486px) {
+    font-size: 36px;
+  }
+
+  @media screen and(max-width: 463px) {
+    font-size: 24px;
+  }
 }
 
 .cost__lists {
@@ -48,27 +43,38 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  .cost__list-item {
-    max-width: 530px;
-    width: 100%;
+  .cost__list {
+    margin-top: 10px;
+  }
 
-    .cost__list {
-      margin-top: 20px;
+  .item {
+    font-size: 28px;
+    line-height: 47px;
 
-      .item {
-        font-size: 28px;
-        line-height: 47px;
-      }
+    .underline {
+      text-decoration: underline;
+    }
+
+    .price {
+      font-family: $fontBold;
+    }
+
+    @media screen and(max-width: 486px) {
+      font-size: 24px;
+    }
+
+    @media screen and(max-width: 463px) {
+      font-size: 18px;
     }
   }
 
-  @media screen and (max-width: 1139px) {
-    justify-content: center;
+  @media screen and(max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
 
-    .cost__list-item:nth-child(2) {
-      order: 3;
-    }
+  @media screen and(max-width: 486px) {
   }
 }
 
@@ -76,19 +82,15 @@
   position: absolute;
   right: 180px;
   bottom: 10px;
-}
 
-.faq {
-  padding: 50px 100px 50px 100pxv;
-  color: #000;
+  @media screen and(max-width: 1000px) {
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
 
-  .title-box {
-    display: block;
-    margin: 0 auto;
-    max-width: 463px;
-
-    .title {
-      text-transform: initial;
+    img {
+      width: 100%;
     }
   }
 }
