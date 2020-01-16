@@ -1,5 +1,6 @@
 .main-header {
-  min-height: 213px;
+  padding-top: 30px;
+  min-height: 200px;
   background-color: #0f0e2b;
   z-index: 5;
 }
@@ -9,7 +10,7 @@
 .main-header__address {
   width: 32%;
   background: #0f0e2b;
-  padding-bottom: 20px;
+  padding-bottom: 37px;
 }
 
 .main-header__address {
@@ -18,15 +19,32 @@
 
   p {
     display: inline-block;
+    line-height: 1.5;
+
+    span {
+      white-space: nowrap;
+    }
   }
 
   .main-header__marker {
     margin-right: 16px;
   }
+
+  @media screen and (max-width: 853px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 }
 
 .main-header__controls {
   z-index: 9;
+
+  @media screen and (max-width: 700px) {
+    margin: 0 auto;
+  }
 }
 
 .main-header__tel {
@@ -35,6 +53,14 @@
   .main-header__tel-img {
     display: inline-block;
     margin-right: 10px;
+  }
+
+  @media screen and (max-width: 853px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 700px) {
+    display: none;
   }
 }
 
@@ -59,11 +85,11 @@
   &::after {
     content: "";
     display: block;
-    width: 90px;
+    width: 116px;
     height: 90px;
     position: absolute;
-    bottom: -45px;
-    left: calc(50% - 45px);
+    bottom: -33px;
+    left: calc(50% - 60px);
     background: #0f0e2b;
     border: 2px solid white;
     border-radius: 50%;
@@ -104,6 +130,6 @@
     width: 28px;
     height: 4px;
     background-color: $yellow;
-    border-radius: 5px;
+    border-radius: 1px;
   }
 }

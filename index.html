@@ -6,10 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="dist/main.css" />
     <title>Document</title>
-    <!-- <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
-    ></script> -->
   </head>
   <body>
     <header class="main-header">
@@ -49,12 +45,12 @@
               </g>
             </svg>
           </span>
-          <p>
-            г.Одесса, ул. Большая Арнаутская 69
-          </p>
+          <p>г.Одесса, <span>ул. Большая Арнаутская 69</span></p>
         </div>
 
-        <div class="main-header__controls flex-row-vertical jc-center ai-center">
+        <div
+          class="main-header__controls flex-row-vertical jc-center ai-center"
+        >
           <div class="main-header__logo">
             <img src="/images/main-header__logo.png" alt="" />
           </div>
@@ -68,9 +64,9 @@
         </div>
       </div>
 
-      <div class="flex-container jc-center full-width">
+      <div class="flex-row jc-center full-width">
         <nav class="main-header__nav full-width collapsed">
-          <ul class="main-header__nav-list">
+          <ul class="main-header__nav-list" id="menu">
             <li class="item">
               <a href="" class="item-link">
                 О Мастере
@@ -78,37 +74,37 @@
             </li>
 
             <li class="item">
-              <a href="" class="item-link">
+              <a href="#style" class="item-link">
                 О Стиле
               </a>
             </li>
 
             <li class="item">
-              <a href="" class="item-link">
+              <a href="#health" class="item-link">
                 Программа
               </a>
             </li>
 
             <li class="item">
-              <a href="" class="item-link">
+              <a href="#individual" class="item-link">
                 Индивидуальные тренировки
               </a>
             </li>
 
             <li class="item">
-              <a href="" class="item-link">
+              <a href="#cost" class="item-link">
                 Стоимость
               </a>
             </li>
 
             <li class="item">
-              <a href="" class="item-link">
+              <a href="#faq" class="item-link">
                 FAQ
               </a>
             </li>
 
             <li class="item">
-              <a href="" class="item-link">
+              <a href="#contacts" class="item-link">
                 Контакты
               </a>
             </li>
@@ -123,7 +119,7 @@
       </div>
     </header>
 
-   <section class="intro">
+    <section class="intro">
       <div class="flex-container jc-space-around">
         <div class="intro__bg">
           <img src="images/intro-bg.png" alt="" />
@@ -173,17 +169,15 @@
             более 20 лет. За это время, воспитал ряд учеников, которые преподают
             в Украине и за рубежом.
           </p>
-
-
         </div>
 
         <div class="about__img">
           <img src="images/about-img.png" alt="" />
         </div>
       </div>
-    </section> 
+    </section>
 
-    <section class="style">
+    <section class="style" id="style">
       <div class="container">
         <div class="title-box">
           <h3 class="title">
@@ -192,8 +186,8 @@
         </div>
 
         <h3 class="style-subtitle">
-          Вин Чун — это боевое искусство, которое включает в себя <span>3 больших
-          раздела.</span> 
+          Вин Чун — это боевое искусство, которое включает в себя
+          <span>3 больших раздела.</span>
         </h3>
 
         <div class="style__mode-list">
@@ -205,11 +199,13 @@
               <div class="style__mode-number">
                 <img src="images/number.png" alt="" />
               </div>
-              <span class="style__mode-description-text">Первый раздел — это навык <br />
-                ведения боя и самообороны.</span>
+              <span class="style__mode-description-text"
+                >Первый раздел — это навык <br />
+                ведения боя и самообороны.</span
+              >
             </div>
           </div>
-          
+
           <div class="style__mode">
             <div class="style__mode-description description--2">
               <div class="style__mode-number">
@@ -217,16 +213,16 @@
                 <img src="images/number.png" alt="" />
               </div>
               <span class="style__mode-description-text">
-                Второй раздел – это цигун. Он отвечает за физическое и психическое
-                здоровье практикующего.
+                Второй раздел – это цигун. Он отвечает за физическое и
+                психическое здоровье практикующего.
               </span>
             </div>
-          
+
             <div class="style__mode-img">
               <img src="images/style-2.png" alt="" />
             </div>
           </div>
-          
+
           <div class="style__mode">
             <div class="style__mode-img">
               <img src="images/style-3.png" alt="" />
@@ -237,17 +233,19 @@
                 <img src="images/number.png" alt="" />
                 <img src="images/number.png" alt="" />
               </div>
-              <span class="style__mode-description-text">Третий раздел — работа с психикой, которая постоянно подвергается
-                стрессу в повседневной жизни, её равновесием и балансом <br />
-                ведения боя и самообороны.</span>
+              <span class="style__mode-description-text"
+                >Третий раздел — работа с психикой, которая постоянно
+                подвергается стрессу в повседневной жизни, её равновесием и
+                балансом <br />
+                ведения боя и самообороны.</span
+              >
             </div>
           </div>
         </div>
-        
       </div>
-    </section> 
+    </section>
 
-    <section class="health">
+    <!-- <section class="health" id="health">
       <div class="container">
         <div class="title-box">
           <h3 class="title">
@@ -336,9 +334,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="combat">
+    <!-- <section class="combat" id="combat">
       <div class="container">
         <div class="title-box">
           <h3 class="title">
@@ -449,9 +447,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="group">
+    <!-- <section class="group" id="group">
       <div class="flex-container jc-space-around">
         <div class="group__image">
           <img src="images/group-bg.jpg" alt="" />
@@ -531,9 +529,9 @@
           </button>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="individual">
+    <!-- <section class="individual" id="individual">
       <div class="container">
         <div class="title-box">
           <h3 class="title">
@@ -552,9 +550,9 @@
           ></iframe>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="cost">
+    <!-- <section class="cost" id="cost">
       <div class="container">
         <div class="title-box">
           <h3 class="title">
@@ -591,9 +589,9 @@
           <img src="images/cost-bg.png" alt="" />
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="faq">
+    <!-- <section class="faq" id="faq">
       <div class="container">
         <div class="title-box">
           <h3 class="title">
@@ -654,9 +652,9 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section> -->
 
-    <section class="contacts">
+    <!-- <section class="contacts" id="contacts">
       <div class="flex-container jc-space-between">
         <div class="contacts__description">
           <div class="title-box">
@@ -733,9 +731,9 @@
           <img src="images/map.png" alt="" />
         </div>
       </div>
-    </section> 
+    </section> -->
 
-    <footer class="main-footer">
+    <!-- <footer class="main-footer">
       <div class="flex-container ai-center jc-space-between">
         <div class="footer__logo">
           <img src="images/footer-logo.png" alt="" />
@@ -745,7 +743,7 @@
           © All Rights Reserved 2020
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script
       type="text/javascript"
@@ -753,7 +751,7 @@
     ></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $("#about").on("click", "a", function(event) {
+        $("#menu").on("click", "a", function(event) {
           event.preventDefault();
           var id = $(this).attr("href"),
             top = $(id).offset().top;
@@ -763,28 +761,27 @@
     </script>
 
     // Открывает и закрывает меню в хэдере
-  <script>
-    let menuBtn = document.querySelector('.main-header__button'),
-        nav = document.querySelector('.main-header__nav'),
-        navList = document.querySelector('.main-header__nav-list');
+    <script>
+      let menuBtn = document.querySelector(".main-header__button"),
+        nav = document.querySelector(".main-header__nav"),
+        navList = document.querySelector(".main-header__nav-list");
 
-    menuBtn.addEventListener('click', function() {
-      nav.classList.toggle('collapsed');
-    });
-
-    // TODO выключить скролл при нажатии на (accordion__item(FAQ)) 
-    const scrollOff = function() {
-      const links = document.querySelectorAll('.accordion__link');
-
-      links.forEach(function(link) {
-        link.onclick=function(e) {
-          e.preventDefault();
-        };
+      menuBtn.addEventListener("click", function() {
+        nav.classList.toggle("collapsed");
       });
-    };
 
-    scrollOff();
+      // TODO выключить скролл при нажатии на (accordion__item(FAQ))
+      const scrollOff = function() {
+        const links = document.querySelectorAll(".accordion__link");
 
-  </script>
+        links.forEach(function(link) {
+          link.onclick = function(e) {
+            e.preventDefault();
+          };
+        });
+      };
+
+      scrollOff();
+    </script>
   </body>
 </html>

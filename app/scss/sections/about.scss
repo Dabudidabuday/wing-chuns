@@ -11,7 +11,8 @@
   @include skewBottom;
 
   @media screen and (max-width: 1082px) {
-    background-position: top;
+    background-position: bottom;
+    background-size: 50%;
 
     .flex-container {
       flex-direction: column;
@@ -20,14 +21,20 @@
     }
 
     .title-box {
-      margin: 0 auto;
+      margin-bottom: 30px;
     }
+  }
+
+  @media screen and (max-width: 760px) {
+    background-size: 60%;
   }
 
   @media screen and (max-width: 555px) {
     .title {
       font-size: 46px;
     }
+
+    background-size: 80%;
   }
 }
 
@@ -44,6 +51,12 @@
     .about__img {
       width: 100%;
       display: block;
+    }
+
+    text-align: center;
+
+    .about__biography {
+      text-align: left;
     }
   }
 }
