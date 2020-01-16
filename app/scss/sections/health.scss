@@ -21,7 +21,7 @@
 .health__subtitle {
   text-align: center;
   margin-top: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-size: 24px;
   font-weight: 300;
   color: #000;
@@ -53,6 +53,10 @@
         font-size: 28px;
         font-family: $fontBold;
         margin-bottom: 30px;
+      }
+
+      .health__description-img {
+        
       }
     }
 
