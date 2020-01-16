@@ -57,7 +57,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 90px;
     height: 90px;
@@ -67,6 +67,7 @@
     background: #0f0e2b;
     border: 2px solid white;
     border-radius: 50%;
+    // z-index: 3;
   }
 
   .main-header__nav-list {

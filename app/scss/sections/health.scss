@@ -33,8 +33,13 @@
   width: 100%;
 
   @media screen and (max-width: 1370px) {
-    display: flex;
     flex-direction: column;
+
+    .health__description-img {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
 
     .health__description-title {
       order: -10;
@@ -43,9 +48,16 @@
     .health__description--right-side {
       order: -1;
     }
+
+    .health__description--left-side {
+      display: none;
+    }
   }
 }
 
+.health__description--left-side {
+  margin-right: 30px;
+}
 .health__description-title {
   margin-top: 55px;
   font-size: 28px;
@@ -62,6 +74,15 @@
     height: 100%;
   }
 }
+
+@media screen and(min-width: 1378px) {
+  .health__description--right-side {
+    .health__description-title {
+      display: none;
+    }
+  }
+}
+
 
 .health__description-list {
   .item {
