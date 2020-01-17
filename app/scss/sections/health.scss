@@ -1,11 +1,27 @@
 .health {
-  margin-top: 70px;
+  margin-top: 100px;
   margin-bottom: 100px;
 
   .title-box {
     max-width: 429px;
     display: block;
     margin: 0 auto;
+
+    @media screen and(max-width: 451px) {
+      max-width: 343px;
+
+      .title {
+        font-size: 42px;
+      }
+    }
+
+    @media screen and(max-width: 370px) {
+      max-width: 245px;
+
+      .title {
+        font-size: 30px;
+      }
+    }
   }
 
   .title {
@@ -53,10 +69,15 @@
         font-size: 28px;
         font-family: $fontBold;
         margin-bottom: 30px;
+        color: #000;
       }
 
-      .health__description-img {
-        
+      .health__description-list {
+        .item {
+          @media screen and(max-width: 423px) {
+            font-size: 20px;
+          }
+        }
       }
     }
 
@@ -67,12 +88,12 @@
 }
 
 .health__description--left-side {
-  margin-right: 30px;
+  margin-right: 60px;
 }
 .health__description-title {
   margin-top: 55px;
   font-size: 28px;
-  font-weight: 800;
+  font-family: $fontBold;
   color: #000;
 }
 

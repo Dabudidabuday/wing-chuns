@@ -75,7 +75,7 @@
   }
 
   @media screen and(max-width: 1025px) {
-    font-size: 46px;
+    font-size: 80px;
   }
 
   @media screen and(max-width: 906px) {
@@ -87,16 +87,25 @@
     font-size: 50px;
   }
 
-  @media screen and(max-width: 585px) {
-    font-size: 42px;
-  }
-
   @media screen and(max-width: 520px) {
-    font-size: 36px;
+    margin-top: 20px;
+    font-size: 50px;
   }
 
   @media screen and(max-width: 471px) {
-    font-size: 36px;
+    font-size: 46px;
+  }
+
+  @media screen and(max-width: 400px) {
+    font-size: 42px;
+  }
+
+  @media screen and(max-width: 368px) {
+    font-size: 38px;
+  }
+
+  @media screen and(max-width: 336px) {
+    font-size: 34px;
   }
 }
 

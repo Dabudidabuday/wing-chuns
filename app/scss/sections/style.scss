@@ -1,6 +1,6 @@
 .style {
   position: relative;
-  background: $bgDark;
+  background: #050213;
   // background-image: url("../../../images/style-bg.png");
   // background-repeat: no-repeat;
   // background-size: contain;
@@ -40,6 +40,18 @@
     white-space: nowrap;
     padding-bottom: 5px;
     border-bottom: 2px solid $yellow;
+  }
+
+  @media screen and(max-width: 428px) {
+    font-size: 24px;
+  }
+
+  @media screen and(max-width: 395px) {
+    font-size: 20px;
+  }
+
+  @media screen and(max-width: 331px) {
+    font-size: 18px;
   }
 }
 
@@ -97,6 +109,10 @@
     text-align: center;
     font-size: 22px;
   }
+
+  @media screen and (max-width: 364px) {
+    font-size: 20px;
+  }
 }
 
 .style__mode-number {
@@ -131,7 +147,8 @@
   }
 
   @media screen and (max-width: 737px) {
-    max-width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 

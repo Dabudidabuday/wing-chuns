@@ -530,7 +530,7 @@ body {
       padding-top: 100px; } }
   @media screen and (max-width: 1025px) {
     .intro__title {
-      font-size: 46px; } }
+      font-size: 80px; } }
   @media screen and (max-width: 906px) {
     .intro__title {
       padding-top: 20px;
@@ -538,15 +538,22 @@ body {
   @media screen and (max-width: 769px) {
     .intro__title {
       font-size: 50px; } }
-  @media screen and (max-width: 585px) {
-    .intro__title {
-      font-size: 42px; } }
   @media screen and (max-width: 520px) {
     .intro__title {
-      font-size: 36px; } }
+      margin-top: 20px;
+      font-size: 50px; } }
   @media screen and (max-width: 471px) {
     .intro__title {
-      font-size: 36px; } }
+      font-size: 46px; } }
+  @media screen and (max-width: 400px) {
+    .intro__title {
+      font-size: 42px; } }
+  @media screen and (max-width: 368px) {
+    .intro__title {
+      font-size: 38px; } }
+  @media screen and (max-width: 336px) {
+    .intro__title {
+      font-size: 34px; } }
 
 .intro__subtitle {
   margin-top: 20px;
@@ -631,12 +638,12 @@ body {
   text-align: right; }
 
 .about {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   position: relative;
   background-color: #fff;
   background-image: url("../../../images/about-bg.png");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 15% 0;
   background-size: contain;
   z-index: 2; }
   .about::after {
@@ -666,10 +673,13 @@ body {
     transform: skewY(-1.5deg);
     overflow: hidden;
     z-index: -1; }
+  @media screen and (max-width: 1600px) {
+    .about {
+      background-position: 0 0; } }
   @media screen and (max-width: 1082px) {
     .about {
       background-position: bottom;
-      background-size: 50%; }
+      background-size: 35%; }
       .about .flex-container, .about .flex-container-wrap {
         flex-direction: column;
         align-items: center;
@@ -712,17 +722,19 @@ body {
       font-size: 14px; } }
 
 .about__img {
-  width: 50%; }
+  width: 70%;
+  margin-left: 30px; }
   .about__img img {
     background-position: right center;
     width: 100%; }
   @media screen and (max-width: 1082px) {
     .about__img {
+      margin-left: 0;
       display: none; } }
 
 .style {
   position: relative;
-  background: linear-gradient(to right, #000000, #050213);
+  background: #050213;
   height: auto;
   text-align: center;
   padding-top: 110px;
@@ -753,6 +765,15 @@ body {
     white-space: nowrap;
     padding-bottom: 5px;
     border-bottom: 2px solid #fbec06; }
+  @media screen and (max-width: 428px) {
+    .style-subtitle {
+      font-size: 24px; } }
+  @media screen and (max-width: 395px) {
+    .style-subtitle {
+      font-size: 20px; } }
+  @media screen and (max-width: 331px) {
+    .style-subtitle {
+      font-size: 18px; } }
 
 @media screen and (max-width: 737px) {
   .style__mode-list .style__mode:nth-child(2) {
@@ -793,6 +814,9 @@ body {
     .style__mode-description-text {
       text-align: center;
       font-size: 22px; } }
+  @media screen and (max-width: 364px) {
+    .style__mode-description-text {
+      font-size: 20px; } }
 
 .style__mode-number {
   display: flex;
@@ -820,19 +844,30 @@ body {
     height: 100%; }
   @media screen and (max-width: 737px) {
     .style__mode-img {
-      max-width: 100%; } }
+      max-width: 90%;
+      margin: 0 auto; } }
 
 .style__mode {
   display: flex;
   justify-content: space-around; }
 
 .health {
-  margin-top: 70px;
+  margin-top: 100px;
   margin-bottom: 100px; }
   .health .title-box {
     max-width: 429px;
     display: block;
     margin: 0 auto; }
+    @media screen and (max-width: 451px) {
+      .health .title-box {
+        max-width: 343px; }
+        .health .title-box .title {
+          font-size: 42px; } }
+    @media screen and (max-width: 370px) {
+      .health .title-box {
+        max-width: 245px; }
+        .health .title-box .title {
+          font-size: 30px; } }
   .health .title {
     text-transform: initial; }
   @media screen and (max-width: 1370px) {
@@ -866,17 +901,22 @@ body {
         .health__description .health__description--right-side .health__description-title {
           font-size: 28px;
           font-family: "Proxima Nova Bold", sans-serif;
-          margin-bottom: 30px; }
+          margin-bottom: 30px;
+          color: #000; } }
+    @media screen and (max-width: 1370px) and (max-width: 423px) {
+      .health__description .health__description--right-side .health__description-list .item {
+        font-size: 20px; } }
+  @media screen and (max-width: 1370px) {
       .health__description .health__description--left-side {
         display: none; } }
 
 .health__description--left-side {
-  margin-right: 30px; }
+  margin-right: 60px; }
 
 .health__description-title {
   margin-top: 55px;
   font-size: 28px;
-  font-weight: 800;
+  font-family: "Proxima Nova Bold", sans-serif;
   color: #000; }
 
 .health__description-image {
@@ -973,7 +1013,7 @@ body {
 
 .combat__description {
   margin-top: 60px;
-  margin-left: 80px; }
+  margin-left: 120px; }
   .combat__description .button {
     margin-top: 40px;
     width: 318px; }
