@@ -9,6 +9,56 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="overlay" class="undisplay"></div>
+
+    <div class="intro__modal-video undisplay">
+      <div class="modal__close">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <iframe
+        width="100%"
+        height="80%"
+        src="https://www.youtube.com/embed/M0xYcWvcxI8"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="combat__modal-video undisplay">
+      <div class="modal__close">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <iframe
+        width="483"
+        height="666"
+        src="https://www.youtube.com/embed/69TSIsqACLY"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="individual__modal-video undisplay">
+      <div class="modal__close">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <iframe
+        width="100%"
+        height="655"
+        src="https://www.youtube.com/embed/69TSIsqACLY"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
     <header class="main-header">
       <div class="flex-container ai-center jc-space-between full-height">
         <div class="main-header__address flex-row ai-center">
@@ -45,7 +95,7 @@
               </g>
             </svg>
           </span>
-          <p>г.Одесса, <span>ул. Большая Арнаутская 69</span></p>
+          <p>г.Одесса, <span>ул. Ольгиевская 4а</span></p>
         </div>
 
         <div
@@ -60,50 +110,50 @@
           <div class="main-header__tel-img">
             <img src="images/tel.png" alt="" />
           </div>
-          <a href="tel">+38 <span class="text-accent">(093)</span> 999 99 99</a>
+          <a href="tel">+38 <span class="text-accent">(067)</span> 303 13 82</a>
         </div>
       </div>
 
       <div class="flex-row jc-center full-width">
         <nav class="main-header__nav full-width collapsed">
           <ul class="main-header__nav-list" id="menu">
-            <li class="item">
-              <a href="" class="item-link">
+            <li class="item wow fadeInLeft" data-wow-delay=".2s">
+              <a href="#about" class="item-link">
                 О Мастере
               </a>
             </li>
 
-            <li class="item">
+            <li class="item wow fadeInLeft" data-wow-delay=".3s">
               <a href="#style" class="item-link">
                 О Стиле
               </a>
             </li>
 
-            <li class="item">
+            <li class="item wow fadeInLeft" data-wow-delay=".4s">
               <a href="#health" class="item-link">
                 Программа
               </a>
             </li>
 
-            <li class="item">
+            <li class="item wow fadeInLeft" data-wow-delay=".5s">
               <a href="#individual" class="item-link">
                 Индивидуальные тренировки
               </a>
             </li>
 
-            <li class="item">
+            <li class="item wow fadeInLeft" data-wow-delay=".6s">
               <a href="#cost" class="item-link">
                 Стоимость
               </a>
             </li>
 
-            <li class="item">
+            <li class="item wow fadeInLeft" data-wow-delay=".7s">
               <a href="#faq" class="item-link">
                 FAQ
               </a>
             </li>
 
-            <li class="item">
+            <li class="item wow fadeInLeft" data-wow-delay=".8s">
               <a href="#contacts" class="item-link">
                 Контакты
               </a>
@@ -123,9 +173,19 @@
       <div class="flex-container jc-space-around">
         <div class="intro__bg" data-wow-delay="0.5s">
           <img src="images/intro-bg.png" alt="" />
+
+          <div class="play">
+            <button class="play-btn">
+              <img src="images/play.png" alt="" />
+            </button>
+            <p class="play-text">
+              смотреть видео
+            </p>
+          </div>
         </div>
+
         <div class="intro__description">
-          <h1 class="intro__title" data-wow-delay="1s">
+          <h1 class="intro__title">
             <span class="text-accent">Вин-чун </span>Кунг-фу
           </h1>
 
@@ -134,8 +194,12 @@
           </h2>
 
           <div class="intro__buttons">
-            <button class="button button--more" type="button">Подробнее</button>
-            <button class="button button--go" type="button">Записаться</button>
+            <button class="button button--more" type="button">
+              Подробнее
+            </button>
+            <button class="button button--go" type="button">
+              Записаться
+            </button>
           </div>
 
           <p class="intro__text">
@@ -234,9 +298,9 @@
                 <img src="images/number.png" alt="" />
               </div>
               <span class="style__mode-description-text">
-              Третий раздел - это медитация. 
-              Работа с психикой, которая постоянно подвергается стресу в повседневной жизни,
-               её равновесием и балансом.
+                Третий раздел - это медитация. Работа с психикой, которая
+                постоянно подвергается стресу в повседневной жизни, её
+                равновесием и балансом.
               </span>
             </div>
           </div>
@@ -344,15 +408,17 @@
         </div>
 
         <div class="flex-container">
-          <div class="combat__video">
-            <iframe
-              width="483"
-              height="666"
-              src="https://www.youtube.com/embed/69TSIsqACLY"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="combat__preview">
+            <img src="images/combat-preview.png" alt="" />
+
+            <div class="play">
+              <button class="play-btn">
+                <img src="images/play.png" alt="" />
+              </button>
+              <p class="play-text">
+                смотреть видео
+              </p>
+            </div>
           </div>
 
           <div class="combat__description">
@@ -538,15 +604,35 @@
           </h3>
         </div>
 
-        <div class="individual__video">
-          <iframe
-            width="100%"
-            height="655"
-            src="https://www.youtube.com/embed/69TSIsqACLY"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+        <div class="individual__preview">
+          <div class="individual__preview-img">
+            <img src="images/individual-preview.jpg" alt="" />
+            <div class="play">
+              <button class="play-btn">
+                <img src="images/play.png" alt="" />
+              </button>
+              <p class="play-text">
+                смотреть видео
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="individual__description">
+          <ul class="indidual__description-list">
+            <li class="item">
+              -максимальное погружение в «Вин Чун»
+            </li>
+            <li class="item">
+              -постоянный контакт и работа с Мастером
+            </li>
+            <li class="item">
+              -получение быстрого и устойчивого результата
+            </li>
+          </ul>
+
+          <button class="button button--go">
+            Записаться на Индивидуальную тренировку
+          </button>
         </div>
       </div>
     </section>
@@ -566,12 +652,12 @@
               <li class="item">
                 1-ая тренировка <span class="price">БЕСПЛАТНО</span>
               </li>
-              <li class="item">1 месяц — <span class="price">500грн.</span></li>
+              <li class="item">1 месяц — <span class="price">600грн.</span></li>
               <li class="item">
-                2 месяца — <span slass="price">900грн.</span>
+                2 месяца — <span class="price">900грн.</span>
               </li>
               <li class="item">
-                3 месяца — <span class="price">1200грн.</span>
+                3 месяца — <span class="price">1500грн.</span>
               </li>
             </ul>
           </div>
@@ -581,15 +667,15 @@
             <ul class="cost__list">
               <li class="item">
                 Марафон <span class="underline">10 часов</span> —
-                <span class="price">3500грн.</span>
+                <span class="price">4500грн.</span>
               </li>
               <li class="item">
                 Марафон <span class="underline">50 часов</span> —
-                <span class="price">15000грн.</span>
+                <span class="price">20000грн.</span>
               </li>
               <li class="item">
                 Марафон <span class="underline">100 часов</span> —
-                <span class="price">25000грн.</span>
+                <span class="price">35000грн.</span>
               </li>
             </ul>
           </ul>
@@ -598,7 +684,7 @@
             <p class="cost__list-title">Индивидуальные занятия:</p>
             <ul class="cost__list">
               <li class="item">
-                Приватное занятие — <span class="price">400 грн/час</span>
+                Приватное занятие — <span class="price">500 грн/час</span>
               </li>
             </ul>
           </div>
@@ -716,7 +802,7 @@
               </svg>
             </span>
 
-            <p>г.Одесса, <span>ул. Большая Арнаутская 69</span></p>
+            <p>г.Одесса, <span>ул. Ольгиевская 4а</span></p>
           </div>
 
           <div class="main-header__tel">
@@ -724,7 +810,7 @@
               <img src="images/tel.png" alt="" />
             </div>
             <a href="tel"
-              >+38 <span class="text-accent">(093)</span> 999 99 99</a
+              >+38 <span class="text-accent">(067)</span> 303 13 82</a
             >
           </div>
 
@@ -761,19 +847,56 @@
       </div>
     </footer>
 
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
-    ></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("#menu").on("click", "a", function(event) {
-          event.preventDefault();
-          var id = $(this).attr("href"),
-            top = $(id).offset().top;
-          $("body,html").animate({ scrollTop: top }, 1500);
+    <!-- Модальное окно для проигрывания видео в секции Intro -->
+    <script>
+      let overlay = document.getElementById("overlay"),
+        playBtn = document.querySelector(".play-btn"),
+        introVideo = document.querySelector(".intro__modal-video"),
+        combatVideo = document.querySelector(".combat__modal-video"),
+        individualVideo = document.querySelector(".individual__modal-video"),
+        closeBtn = document.querySelector(".modal__close");
+
+      let introModalOpen = function() {
+        playBtn.addEventListener("click", function() {
+          overlay.classList.toggle("undisplay");
+          introVideo.classList.toggle("undisplay");
         });
-      });
+      };
+
+      let introModalClose = function() {
+        closeBtn.addEventListener("click", function() {
+          overlay.classList.toggle("undisplay");
+          introVideo.classList.toggle("undisplay");
+        });
+      };
+
+      function initIntroModalListeners() {
+        introModalOpen();
+        introModalClose();
+      }
+
+      initIntroModalListeners();
+
+      // let combatModalOpen = function() {
+      //   playBtn.addEventListener("click", function() {
+      //     overlay.classList.toggle("undisplay");
+      //     combatVideo.classList.toggle("undisplay");
+      //   });
+      // };
+
+      // let combatModalClose = function() {
+      //   closeBtn.addEventListener("click", function() {
+      //     overlay.classList.toggle("undisplay");
+      //     combatVideo.classList.toggle("undisplay");
+      //   });
+      // };
+
+      // function initCombatModalListeners() {
+      //   combatModalOpen();
+      //   combatModalClose();
+      // }
+
+      // initCombatModalListeners();
     </script>
 
     <!-- Открывает и закрывает меню в хэдере -->
@@ -787,18 +910,38 @@
       });
 
       // TODO выключить скролл при нажатии на (accordion__item(FAQ))
-      // const scrollOff = function() {
-      //   const links = document.querySelectorAll(".accordion__link");
+      const scrollOff = function() {
+        const links = document.querySelectorAll(".accordion__link");
 
-      //   links.forEach(function(link) {
-      //     link.onclick = function(e) {
-      //       e.preventDefault();
-      //     };
-      //   });
-      // };
+        links.forEach(function(link) {
+          link.onclick = function(e) {
+            e.preventDefault();
+          };
+        });
+      };
 
       scrollOff();
     </script>
+
+    <!-- Jquery -->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+    ></script>
+
+    <!-- Плавная прокрутка для якорных ссылок -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#menu").on("click", "a", function(event) {
+          event.preventDefault();
+          var id = $(this).attr("href"),
+            top = $(id).offset().top;
+          $("body,html").animate({ scrollTop: top }, 1500);
+        });
+      });
+    </script>
+
+    <!-- Библиотека для появления элементов при скролле -->
     <script src="app/libraries/wow.min.js"></script>
     <script>
       new WOW().init();

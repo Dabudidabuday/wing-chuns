@@ -1,5 +1,15 @@
+//Framework
 @import "framework/index.scss";
 
+//Components
+@import "components/accordion.scss";
+@import "components/title-box.scss";
+@import "components/buttons.scss";
+
+//modal windows
+@import "components/modal/main.scss";
+
+//Sections
 @import "sections/header.scss";
 @import "sections/intro.scss";
 @import "sections/about.scss";

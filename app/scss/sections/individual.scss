@@ -5,6 +5,10 @@
   text-align: center;
   @include skewTop;
 
+  .container {
+    padding: 0;
+  }
+
   .title-box {
     display: inline-block;
 
@@ -33,10 +37,31 @@
   }
 }
 
-.individual__video {
-  margin-top: 50px;
-  iframe {
-    display: block;
-    margin: 0 auto;
+.individual__preview-img {
+  position: relative;
+
+  .play {
+    top: 30%;
+  }
+}
+
+.individual__description {
+  position: absolute;
+  z-index: 100;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .indidual__description-list {
+    font-size: 24px;
+    line-height: 47px;
+    font-family: $fontSemi;
+  }
+
+  .button {
+    margin: 35px auto;
+    width: 537px;
+    height: 62px;
+    font-family: $fontBold;
   }
 }

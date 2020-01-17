@@ -251,6 +251,16 @@ a {
 .full-width {
   width: 100%; }
 
+.undisplay {
+  display: none; }
+
+html,
+body {
+  position: relative;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 18px;
+  color: #fff; }
+
 .accordion__item {
   padding: 1rem;
   margin: 0 auto 20px;
@@ -347,11 +357,44 @@ a {
   .button--go:hover {
     box-shadow: 0 1px 15px 2px #ffe200; }
 
-html,
-body {
-  font-family: "Proxima Nova Regular", sans-serif;
-  font-size: 18px;
-  color: #fff; }
+.intro__modal-video {
+  position: fixed;
+  top: 10%;
+  width: 100%;
+  height: 95%;
+  z-index: 1000; }
+
+.modal__close {
+  position: absolute;
+  top: -50px;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  z-index: 1001;
+  cursor: pointer;
+  transition: 0.2s; }
+  .modal__close .line:nth-child(1) {
+    transform: rotate(-45deg); }
+  .modal__close .line:nth-child(2) {
+    transform: rotate(45deg); }
+  .modal__close .line {
+    width: 28px;
+    height: 3px;
+    background-color: #fbec06;
+    border-radius: 5px; }
+  .modal__close:hover {
+    transform: rotate(90deg); }
+
+#overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999; }
 
 .main-header {
   padding-top: 30px;
@@ -415,14 +458,18 @@ body {
   .main-header__nav::after {
     content: "";
     display: block;
-    width: 116px;
+    width: 90px;
     height: 90px;
     position: absolute;
-    bottom: -33px;
-    left: calc(50% - 60px);
+    bottom: -47px;
+    left: calc(50% - 47px);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(45deg);
+    border-bottom-right-radius: 60px;
     background: #0f0e2b;
     border: 2px solid white;
-    border-radius: 50%; }
+    z-index: 3; }
   .main-header__nav .main-header__nav-list {
     height: auto;
     overflow: hidden; }
@@ -438,6 +485,10 @@ body {
       width: 60px;
       height: 1px;
       background-color: #ccc; }
+    .main-header__nav li .item-link {
+      transition: 0.2s; }
+      .main-header__nav li .item-link:hover {
+        color: #fbec06; }
 
 .main-header__button {
   cursor: pointer;
@@ -453,6 +504,7 @@ body {
     border-radius: 1px; }
 
 .intro {
+  padding-top: 200px;
   padding-bottom: 100px;
   position: relative;
   background-color: #050213;
@@ -490,24 +542,23 @@ body {
       .intro > .flex-container, .intro > .flex-container-wrap {
         flex-wrap: wrap; } }
 
-.intro__bg img {
-  width: 100%;
-  height: 100%; }
-
-@media screen and (max-width: 1220px) {
-  .intro__bg {
-    width: 40%;
-    height: auto; } }
-
-@media screen and (max-width: 769px) {
-  .intro__bg {
-    width: 70%;
-    height: auto; } }
-
-@media screen and (max-width: 611px) {
-  .intro__bg {
+.intro__bg {
+  position: relative; }
+  .intro__bg img {
     width: 100%;
-    height: auto; } }
+    height: 100%; }
+  @media screen and (max-width: 1220px) {
+    .intro__bg {
+      width: 40%;
+      height: auto; } }
+  @media screen and (max-width: 769px) {
+    .intro__bg {
+      width: 70%;
+      height: auto; } }
+  @media screen and (max-width: 611px) {
+    .intro__bg {
+      width: 100%;
+      height: auto; } }
 
 @media screen and (max-width: 1025px) {
   .intro__description {
@@ -636,6 +687,35 @@ body {
   transform: rotate(90deg);
   line-height: 1.5;
   text-align: right; }
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 350px;
+  z-index: 10; }
+  .play .play-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 95px;
+    height: 95px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.3s;
+    outline: none; }
+    .play .play-btn:hover {
+      box-shadow: 0 1px 15px 2px #ffe200; }
+  .play .play-text {
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
 
 .about {
   padding-bottom: 50px;
@@ -939,7 +1019,7 @@ body {
 .combat {
   position: relative;
   padding-top: 40px;
-  background: linear-gradient(to right, #000000, #050213); }
+  background: linear-gradient(to right, #07031a, #070316); }
   .combat::after {
     content: "";
     position: absolute;
@@ -1003,13 +1083,9 @@ body {
         .combat .flex-container .button, .combat .flex-container-wrap .button {
           margin: 30px auto; } }
 
-.combat__video {
+.combat__preview {
+  position: relative;
   margin-top: 60px; }
-  @media screen and (max-width: 600px) {
-    .combat__video iframe {
-      display: block;
-      margin: 0 auto;
-      max-width: 90%; } }
 
 .combat__description {
   margin-top: 60px;
@@ -1138,7 +1214,7 @@ body {
 .individual {
   padding-top: 50px;
   position: relative;
-  background: linear-gradient(to right, #000000, #050213);
+  background: linear-gradient(to right, #07031a, #070316);
   text-align: center; }
   .individual::after {
     content: "";
@@ -1153,6 +1229,8 @@ body {
     transform-origin: top left;
     transform: skewY(-1.5deg);
     z-index: -1; }
+  .individual .container, .individual .flex-container, .individual .flex-container-wrap, .individual .flex-container-vertical, .individual .flex-container-vertical-wrap {
+    padding: 0; }
   .individual .title-box {
     display: inline-block; }
     .individual .title-box .title {
@@ -1173,15 +1251,30 @@ body {
         .individual .title-box .title {
           font-size: 20px; } }
 
-.individual__video {
-  margin-top: 50px; }
-  .individual__video iframe {
-    display: block;
-    margin: 0 auto; }
+.individual__preview-img {
+  position: relative; }
+  .individual__preview-img .play {
+    top: 30%; }
+
+.individual__description {
+  position: absolute;
+  z-index: 100;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%); }
+  .individual__description .indidual__description-list {
+    font-size: 24px;
+    line-height: 47px;
+    font-family: "Proxima Nova Semibold", sans-serif; }
+  .individual__description .button {
+    margin: 35px auto;
+    width: 537px;
+    height: 62px;
+    font-family: "Proxima Nova Bold", sans-serif; }
 
 .cost {
   position: relative;
-  background: linear-gradient(to right, #000000, #050213);
+  background: linear-gradient(to right, #07031a, #070316);
   padding-bottom: 50px; }
   .cost::before {
     content: "";
@@ -1284,7 +1377,7 @@ body {
 
 .contacts {
   position: relative;
-  background: linear-gradient(to right, #000000, #050213);
+  background: linear-gradient(to right, #07031a, #070316);
   padding-top: 50px;
   padding-bottom: 50px; }
   .contacts::after {

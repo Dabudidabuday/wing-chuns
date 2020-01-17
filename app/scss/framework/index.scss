@@ -6,13 +6,9 @@
 @import "typography.scss";
 @import "utils.scss";
 
-//Components
-@import "components/accordion.scss";
-@import "components/title-box.scss";
-@import "components/buttons.scss";
-
 html,
 body {
+  position: relative;
   font-family: "Proxima Nova Regular", sans-serif;
   font-size: 18px;
   color: #fff;

@@ -85,15 +85,18 @@
   &::after {
     content: "";
     display: block;
-    width: 116px;
+    width: 90px;
     height: 90px;
     position: absolute;
-    bottom: -33px;
-    left: calc(50% - 60px);
+    bottom: -47px;
+    left: calc(50% - 47px);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(45deg);
+    border-bottom-right-radius: 60px;
     background: #0f0e2b;
     border: 2px solid white;
-    border-radius: 50%;
-    // z-index: 3;
+    z-index: 3;
   }
 
   .main-header__nav-list {
@@ -114,6 +117,14 @@
       width: 60px;
       height: 1px;
       background-color: #ccc;
+    }
+
+    .item-link {
+      transition: 0.2s;
+
+      &:hover {
+        color: $yellow;
+      }
     }
   }
 }
