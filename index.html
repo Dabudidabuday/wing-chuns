@@ -12,7 +12,6 @@
     <div id="overlay" class="undisplay"></div>
 
     <div class="modal__sign-in undisplay">
-      
       <button class="sign-in__close" id="sign-in__close">
         <div class="line"></div>
         <div class="line"></div>
@@ -27,22 +26,22 @@
           <fieldset>
             <label>
               Ваше имя <sub>*</sub>
-              <input type="text" required>
+              <input type="text" required />
             </label>
 
             <label>
               Ваш номер телефона <sub>*</sub>
-              <input type="tel" required>
+              <input type="tel" required />
             </label>
 
             <label>
               Ваш Email <sub>*</sub>
-              <input type="email" required>
+              <input type="email" required />
             </label>
-          </fieldset>        
-        </form>       
+          </fieldset>
+        </form>
       </div>
-      <input type="submit" value="ОТПРАВИТЬ" class="form__submit">
+      <input type="submit" value="ОТПРАВИТЬ" class="form__submit" />
     </div>
 
     <div class="intro__modal-video undisplay">
@@ -228,7 +227,7 @@
           </h2>
 
           <div class="intro__buttons">
-            <button class="button button--more"  type="button">
+            <button class="button button--more" type="button">
               Подробнее
             </button>
             <button class="button button--go" type="button" id="sign-btn">
@@ -664,7 +663,7 @@
             </li>
           </ul>
 
-          <button class="button button--go">
+          <button class="button button--go" id="individual__btn-form">
             Записаться на Индивидуальную тренировку
           </button>
         </div>
@@ -879,39 +878,66 @@
     </footer>
 
     <script>
-      const overlay = document.getElementById('overlay');
-      
-      const modalSignIn = document.querySelector('.modal__sign-in');
-      const signBtn = document.getElementById('sign-btn');
+      //modal form
+      const modalSignIn = document.querySelector(".modal__sign-in");
 
-      const groupBtnForm = document.getElementById('group__btn-form');
-      const combatBtnForm = document.getElementById('combat__btn-form');
+      //modal buttons
+      const signBtn = document.getElementById("sign-btn");
+      const groupBtnForm = document.getElementById("group__btn-form");
+      const combatBtnForm = document.getElementById("combat__btn-form");
+      const individualBtnForm = document.getElementById("individual__btn-form");
 
+      //close button
+      const close = document.getElementById("sign-in__close");
 
-      const close = document.getElementById('sign-in__close');
+      // send button
+      const send = document.querySelector(".form__submit");
 
-      let openModalForm = function(button,form) {
-        button.addEventListener('click', function () {
-          overlay.classList.remove('undisplay');
-          form.classList.remove('undisplay');
-        })
-      }
-      
+      /**
+       * @method openModalForm
+       * @param button {HTMLElement}
+       * @param form {HTMLElement}
+       */
+      let openModalForm = function(button, form) {
+        button.addEventListener("click", function() {
+          overlay.classList.remove("undisplay");
+          form.classList.remove("undisplay");
+        });
+      };
+
+      /**
+       * @method closeModalForm
+       * @param form {HTMLElement}
+       */
       let closeModalForm = function(form) {
-        close.addEventListener('click', function() {
-          overlay.classList.add('undisplay');
-          form.classList.add('undisplay');
-        })
-      }
+        close.addEventListener("click", function() {
+          overlay.classList.add("undisplay");
+          form.classList.add("undisplay");
+        });
+      };
+
+      /**
+       * @method SendModalForm
+       */
+
+      let sendForm = function(form) {
+        send.addEventListener("click", function() {
+          overlay.classList.add("undisplay");
+          form.classList.add("undisplay");
+        });
+      };
+
+      //Send modal Form
+      sendForm(modalSignIn);
 
       //OPEN modal Forms
       openModalForm(signBtn, modalSignIn);
       openModalForm(groupBtnForm, modalSignIn);
       openModalForm(combatBtnForm, modalSignIn);
-      
+      openModalForm(individualBtnForm, modalSignIn);
+
       // Close Modal Forms
       closeModalForm(modalSignIn);
-
     </script>
 
     <!-- Модальные окна для проигрывания видео -->
