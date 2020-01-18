@@ -33,14 +33,14 @@
         <div class="line"></div>
       </div>
 
-      <iframe style="display: none"
-        width="100%"
-        height="80%"
-        src="https://www.youtube.com/embed/69TSIsqACLY"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+<!--      <iframe style="display: none"-->
+<!--        width="100%"-->
+<!--        height="80%"-->
+<!--        src="https://www.youtube.com/embed/69TSIsqACLY"-->
+<!--        frameborder="0"-->
+<!--        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
+<!--        allowfullscreen-->
+<!--      ></iframe>-->
     </div>
 
     <div class="individual__modal-video undisplay">
@@ -49,14 +49,14 @@
         <div class="line"></div>
       </div>
 
-      <iframe style="display: none"
-        width="100%"
-        height="80%"
-        src="https://www.youtube.com/embed/69TSIsqACLY"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+<!--      <iframe style="display: none"-->
+<!--        width="100%"-->
+<!--        height="80%"-->
+<!--        src="https://www.youtube.com/embed/69TSIsqACLY"-->
+<!--        frameborder="0"-->
+<!--        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
+<!--        allowfullscreen-->
+<!--      ></iframe>-->
     </div>
 
     <header class="main-header">
@@ -645,7 +645,7 @@
           </h3>
         </div>
 
-        <ul class="cost__lists">
+        <div class="cost__lists">
           <div class="cost__list-item">
             <p class="cost__list-title">Групповые тренировки:</p>
             <ul class="cost__list">
@@ -662,7 +662,7 @@
             </ul>
           </div>
 
-          <ul class="cost__list-item">
+          <div class="cost__list-item">
             <p class="cost__list-title">Марафон:</p>
             <ul class="cost__list">
               <li class="item">
@@ -678,7 +678,7 @@
                 <span class="price">35000грн.</span>
               </li>
             </ul>
-          </ul>
+          </div>
 
           <div class="cost__list-item">
             <p class="cost__list-title">Индивидуальные занятия:</p>
@@ -688,7 +688,7 @@
               </li>
             </ul>
           </div>
-        </ul>
+        </div>
         <div class="cost__img">
           <img src="images/cost-bg.png" alt="" />
         </div>
@@ -705,15 +705,15 @@
 
         <div class="faq__accordion accordion">
           <div class="accordion__item" id="question1">
-            <a href="#" class="accordion__link">
-              <div class="acccordion__icon">
-                <!-- <span class="icon--plus">+</span>
-                <span class="icon--minus">–</span> -->
-              </div>
+            <button class="accordion__link">
+              <span class="acccordion__icon">
+                <span class="icon--plus">+</span>
+                <span class="icon--minus">–</span>
+              </span>
               С какого возраста я могу начать заниматься?
-            </a>
+            </button>
 
-            <div class="accordion__answer">
+            <div class="accordion__answer" id="answer1">
               <p>
                 Мы проводим тренировки в малокомплектных группах, есть группы
                 для детей от 6 лет. И стандартная группа с 12 лет.
@@ -722,15 +722,15 @@
           </div>
 
           <div class="accordion__item" id="question2">
-            <a href="#" class="accordion__link">
-              <div class="acccordion__icon">
-                <!-- <span class="icon--plus">+</span>
-                <span class="icon--minus">–</span> -->
-              </div>
+            <button class="accordion__link">
+              <span class="acccordion__icon">
+                <span class="icon--plus">+</span>
+                <span class="icon--minus">–</span>
+              </span>
               Контурная пластика, для кого?
-            </a>
+            </button>
 
-            <div class="accordion__answer">
+            <div class="accordion__answer" id="answer2">
               <p>
                 Мы проводим тренировки в малокомплектных группах, есть группы
                 для детей от 6 лет. И стандартная группа с 12 лет.
@@ -739,15 +739,15 @@
           </div>
 
           <div class="accordion__item" id="question3">
-            <a href="#" class="accordion__link">
-              <!-- <div class="acccordion__icon">
-                <!-- <span class="icon--plus">+</span>
-                <span class="icon--minus">–</span> -->
-              </div> -->
+            <button class="accordion__link">
+              <span class="acccordion__icon">
+                <span class="icon--plus">+</span>
+                <span class="icon--minus">–</span>
+              </span>
               Контурная пластика, для кого?
-            </a>
+            </button>
 
-            <div class="accordion__answer">
+            <div class="accordion__answer" id="answer3">
               <p>
                 Мы проводим тренировки в малокомплектных группах, есть группы
                 для детей от 6 лет. И стандартная группа с 12 лет.
@@ -869,34 +869,33 @@
         ".individual__modal-video"
       );
 
-      const modalVideoOpen = function(button, video) {
+      /**
+       * @method openVideoModal
+       * @param button {HTMLElement}
+       * @param window {HTMLElement}
+       * @param url {String}
+       */
+      const openVideoModal = function(button, window, url) {
         const iframe = document.createElement('iframe');
+
         iframe.className='intro__iframe';
         iframe.width="100%";
         iframe.height = "90%";
-        iframe.src = "https://www.youtube.com/embed/M0xYcWvcxI8?autoplay=1";
+        iframe.src = url;
         iframe.frameborder = "0";
-        iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
         iframe.allowfullscreen;
+
         button.addEventListener("click", function() {
           overlay.classList.remove("undisplay");
-          video.classList.remove("undisplay");
-          video.appendChild(iframe);
+          window.classList.remove("undisplay");
+          window.appendChild(iframe);
         });
       };
 
-      // <iframe style="display: none"
-      //     width="100%"
-      //     height="90%"
-      //     src="https://www.youtube.com/embed/M0xYcWvcxI8?autoplay=1"
-      //     frameborder="0"
-      //     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      //     allowfullscreen
-      //   ></iframe>
-
       const modalVideoClose = function(button, video) {
         const iframe = document.querySelector('.intro__iframe');
-        console.log(iframe);
+
         button.addEventListener("click", function() {
           if (iframe) {
             video.removeChild(iframe);
@@ -906,9 +905,9 @@
         });
       };
 
-      modalVideoOpen(introPlay, introVideo);
-      modalVideoOpen(combatPlay, combatVideo);
-      modalVideoOpen(individualPlay, individualVideo);
+      openVideoModal(introPlay, introVideo, 'https://www.youtube.com/embed/M0xYcWvcxI8');
+      openVideoModal(combatPlay, combatVideo, 'https://www.youtube.com/embed/69TSIsqACLY');
+      openVideoModal(individualPlay, individualVideo, 'https://www.youtube.com/embed/Ev92DX9HlXI');
 
       modalVideoClose(introCloseBtn, introVideo);
       modalVideoClose(combatCloseBtn, combatVideo);
@@ -926,19 +925,6 @@
       menuBtn.addEventListener("click", function() {
         nav.classList.toggle("collapsed");
       });
-
-      // TODO выключить скролл при нажатии на (accordion__item(FAQ))
-      // const scrollOff = function() {
-      //   const links = document.querySelectorAll(".accordion__link");
-
-      //   links.forEach(function(link) {
-      //     link.onclick = function(e) {
-      //       e.preventDefault();
-      //     };
-      //   });
-      // };
-
-      // scrollOff();
     </script>
 
     <!-- Jquery -->
@@ -964,5 +950,6 @@
     <script>
       new WOW().init();
     </script>
+    <script src="dist/main.js"></script>
   </body>
 </html>

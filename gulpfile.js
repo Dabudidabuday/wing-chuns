@@ -36,11 +36,20 @@ const sass = require("gulp-sass");
 const browserSync = require("browser-sync").create();
 const gulpConcat = require("gulp-concat");
 
-function style() {
+function compileStyles() {
   return src("app/scss/index.scss")
     .pipe(sass())
     .pipe(gulpConcat("main.css"))
     .pipe(dest("dist/"));
+}
+
+function compileJs () {
+  return src([
+    'app/js/faq.js',
+  ])
+    .pipe(gulpConcat('main.js'))
+    .pipe(dest('dist/'))
+  ;
 }
 
 function startBrowserSync() {
@@ -54,8 +63,10 @@ function startBrowserSync() {
 
 function watcher() {
   startBrowserSync();
-  watch("app/scss/**/*.scss").on("change", series(style, browserSync.reload));
+
+  watch("app/scss/**/*.scss").on("change", series(compileStyles, browserSync.reload));
+  watch("app/js/**/*.js").on("change", series(compileJs, browserSync.reload));
   watch("index.html").on("change", browserSync.reload);
 }
 
-exports.run = watcher;
+exports.run = series(compileStyles, compileJs, watcher);

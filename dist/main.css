@@ -276,7 +276,10 @@ body {
   display: flex;
   align-items: center;
   color: #000;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border: 0;
+  outline: 0;
+  background: transparent; }
   .accordion__link .acccordion__icon {
     display: flex;
     justify-content: center;
@@ -302,6 +305,8 @@ body {
   padding-left: 65px;
   font-size: 18px;
   font-weight: 300; }
+  .accordion__answer p {
+    color: black; }
 
 .accordion__item:target .accordion__answer {
   max-height: 20rem; }
