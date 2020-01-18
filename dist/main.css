@@ -280,7 +280,8 @@ body {
   margin-bottom: 20px;
   border: 0;
   outline: 0;
-  background: transparent; }
+  background: transparent;
+  cursor: pointer; }
   .accordion__link.expanded .acccordion__icon {
     background: #ffffff;
     border: 1px solid #fbec06; }
