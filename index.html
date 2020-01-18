@@ -9,40 +9,42 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="overlay" class="undisplay"></div>
-
-    <div class="modal__sign-in undisplay">
-      <button class="sign-in__close" id="sign-in__close">
-        <div class="line"></div>
-        <div class="line"></div>
-      </button>
-
-      <div class="modal__inner">
-        <h4 class="modal__title">
-          Пожалуйста, заполните форму ниже
-        </h4>
-
-        <form action="#" method="POST" name="sign-in">
-          <fieldset>
-            <label>
-              Ваше имя <sub>*</sub>
-              <input type="text" required />
-            </label>
-
-            <label>
-              Ваш номер телефона <sub>*</sub>
-              <input type="tel" required />
-            </label>
-
-            <label>
-              Ваш Email <sub>*</sub>
-              <input type="email" required />
-            </label>
-          </fieldset>
-        </form>
+    <div id="overlay" class="undisplay">
+      <div class="modal__sign-in undisplay">
+        <button class="sign-in__close" id="sign-in__close">
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+      
+        <div class="modal__inner">
+          <h4 class="modal__title">
+            Пожалуйста, заполните форму ниже
+          </h4>
+      
+          <form action="#" method="POST" name="sign-in">
+            <fieldset>
+              <label>
+                Ваше имя <sub>*</sub>
+                <input type="text" required />
+              </label>
+      
+              <label>
+                Ваш номер телефона <sub>*</sub>
+                <input type="tel" required />
+              </label>
+      
+              <label>
+                Ваш Email <sub>*</sub>
+                <input type="email" required />
+              </label>
+            </fieldset>
+          </form>
+        </div>
+        <input type="submit" value="ОТПРАВИТЬ" class="form__submit" />
       </div>
-      <input type="submit" value="ОТПРАВИТЬ" class="form__submit" />
     </div>
+
+    
 
     <div class="intro__modal-video undisplay">
       <div class="modal__close" id="intro-close">
@@ -143,7 +145,9 @@
           <div class="main-header__tel-img">
             <img src="images/tel.png" alt="" />
           </div>
-          <a href="tel:+380673031382">+38 <span class="text-accent">(067)</span> 303 13 82</a>
+          <a href="tel:+380673031382"
+            >+38 <span class="text-accent">(067)</span> 303 13 82</a
+          >
         </div>
       </div>
 
@@ -227,7 +231,12 @@
           </h2>
 
           <div class="intro__buttons">
-            <button class="button button--more" type="button">
+            <button
+              data-id="about"
+              id="intro__more"
+              class="button button--more"
+              type="button"
+            >
               Подробнее
             </button>
             <button class="button button--go" type="button" id="sign-btn">
@@ -1041,11 +1050,20 @@
       $(document).ready(function() {
         $("#menu").on("click", "a", function(event) {
           event.preventDefault();
-          var id = $(this).attr("href"),
-            top = $(id).offset().top;
+          const id = $(this).attr("href");
+          const top = $(id).offset().top;
+          $("body,html").animate({ scrollTop: top }, 1500);
+        });
+
+        $("#intro__more").click(function(event) {
+          event.preventDefault();
+          const id = $(this).data("id");
+          const top = $("#" + id).offset().top;
           $("body,html").animate({ scrollTop: top }, 1500);
         });
       });
+
+      console.log($("#intro__more"));
     </script>
 
     <!-- Библиотека для появления элементов при скролле -->
