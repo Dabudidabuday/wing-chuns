@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   color: #000;
+  font-size: 22px;
   margin-bottom: 20px;
   border: 0;
   outline: 0;
@@ -45,10 +46,10 @@
 .accordion__answer {
   max-height: 0;
   overflow: hidden;
-  transition: ease-in-out max-height 0.35s;
+  transition: ease-in-out max-height 0.25s;
   padding-left: 65px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 100;
 
   p {
     color: black;
