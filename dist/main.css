@@ -281,6 +281,9 @@ body {
   border: 0;
   outline: 0;
   background: transparent; }
+  .accordion__link.expanded .acccordion__icon {
+    background: #ffffff;
+    border: 1px solid #fbec06; }
   .accordion__link .acccordion__icon {
     display: flex;
     justify-content: center;
