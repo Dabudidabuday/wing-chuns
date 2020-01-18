@@ -13,12 +13,20 @@
 .accordion__link {
   display: flex;
   align-items: center;
-  color: #000;
+  color: $black;
   font-size: 22px;
   margin-bottom: 20px;
   border: 0;
   outline: 0;
   background: transparent;
+  cursor: pointer;
+
+  &.expanded {
+    .acccordion__icon {
+      background: $white;
+      border: 1px solid $yellow;
+    }
+  }
 
   .acccordion__icon {
     display: flex;
@@ -52,7 +60,8 @@
   font-weight: 100;
 
   p {
-    color: black;
+    color: $black;
+    padding-bottom: 60px;
   }
 }
 

@@ -57,7 +57,7 @@ function startBrowserSync() {
     server: {
       baseDir: "./"
     },
-    notify: false
+    notify: false,
   });
 }
 
