@@ -13,7 +13,7 @@
 .accordion__link {
   display: flex;
   align-items: center;
-  color: #000;
+  color: $black;
   font-size: 22px;
   margin-bottom: 20px;
   border: 0;
@@ -59,7 +59,7 @@
   font-weight: 100;
 
   p {
-    color: black;
+    color: $black;
     padding-bottom: 60px;
   }
 }

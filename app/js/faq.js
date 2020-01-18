@@ -38,12 +38,12 @@
   function toggleAccordion(emitter, content, icon) {
     $(emitter).click(function () {
       if (content.style.maxHeight === '0px') {
-        timedOutHtmlChange(icon, `-`, 300);
+        timedOutHtmlChange(icon, `-`, 250);
         emitter.classList.add('expanded');
         return content.style.maxHeight = '250px';
       }
 
-      timedOutHtmlChange(icon, `+`, 100);
+      timedOutHtmlChange(icon, `+`, 150);
       emitter.classList.remove('expanded');
       return content.style.maxHeight = '0px';
     });
