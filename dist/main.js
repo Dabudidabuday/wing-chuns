@@ -30,7 +30,7 @@
   }
 
   /**
-   * @method toggleAccordion {String}
+   * @method toggleAccordion
    * @param emitter {HTMLElement}
    * @param content {HTMLElement}
    * @param icon {HTMLElement}
