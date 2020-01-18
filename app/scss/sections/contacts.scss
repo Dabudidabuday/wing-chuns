@@ -28,6 +28,7 @@
     margin-bottom: 25px;
     background-color: inherit;
     width: 100%;
+    font-size: 24px;
 
     span {
       white-space: nowrap;
@@ -64,6 +65,8 @@
   @media screen and (max-width: 660px) {
     margin-bottom: 20px;
   }
+
+  
 }
 
 .contacts__map {

@@ -217,8 +217,10 @@
 
 .scroll-text {
   position: absolute;
-  right: -47px;
-  bottom: -4px;
+  width: 200px;
+  right: -120px;
+  bottom: 20px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   transform: rotate(90deg);
   line-height: 1.5;

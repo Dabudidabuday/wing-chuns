@@ -357,7 +357,9 @@ body {
   .button--go:hover {
     box-shadow: 0 1px 15px 2px #ffe200; }
 
-.intro__modal-video {
+.intro__modal-video,
+.combat__modal-video,
+.individual__modal-video {
   position: fixed;
   top: 10%;
   width: 100%;
@@ -382,8 +384,6 @@ body {
     height: 3px;
     background-color: #fbec06;
     border-radius: 5px; }
-  .modal__close:hover {
-    transform: rotate(90deg); }
 
 #overlay {
   position: absolute;
@@ -681,8 +681,10 @@ body {
 
 .scroll-text {
   position: absolute;
-  right: -47px;
-  bottom: -4px;
+  width: 200px;
+  right: -120px;
+  bottom: 20px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   transform: rotate(90deg);
   line-height: 1.5;
@@ -882,7 +884,7 @@ body {
 
 .style__mode-description-text {
   padding-left: 20px;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 41px;
   font-weight: 800;
   max-width: 546px;
@@ -957,11 +959,14 @@ body {
 
 .health__subtitle {
   text-align: center;
-  margin-top: 24px;
-  margin-bottom: 50px;
+  margin: 24px auto 50px;
   font-size: 24px;
-  font-weight: 300;
-  color: #000; }
+  font-family: "Proxima Nova Bold", sans-serif;
+  color: #000;
+  background-color: #fbec06;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 550px; }
 
 .health__description {
   display: flex;
@@ -1019,7 +1024,7 @@ body {
 .combat {
   position: relative;
   padding-top: 40px;
-  background: linear-gradient(to right, #07031a, #070316); }
+  background: #070316; }
   .combat::after {
     content: "";
     position: absolute;
@@ -1163,11 +1168,10 @@ body {
 .group__image {
   border-radius: 10px;
   margin-right: 50px;
-  max-width: 70%; }
+  max-width: 80%; }
   .group__image img {
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 10px 2px #ababab;
     border-radius: 10px; }
   @media screen and (max-width: 1119px) {
     .group__image {
@@ -1175,7 +1179,7 @@ body {
       margin-right: 0; } }
 
 .group__description .button {
-  margin-top: 40px;
+  margin-top: 25px;
   width: 318px; }
 
 @media screen and (max-width: 1119px) {
@@ -1214,7 +1218,7 @@ body {
 .individual {
   padding-top: 50px;
   position: relative;
-  background: linear-gradient(to right, #07031a, #070316);
+  background: #070316;
   text-align: center; }
   .individual::after {
     content: "";
@@ -1274,7 +1278,7 @@ body {
 
 .cost {
   position: relative;
-  background: linear-gradient(to right, #07031a, #070316);
+  background: #070316;
   padding-bottom: 50px; }
   .cost::before {
     content: "";
@@ -1291,7 +1295,7 @@ body {
     overflow: hidden;
     z-index: -1; }
   .cost .title-box {
-    margin: 50px 0 0 50px; }
+    margin: 50px 0 0 0px; }
     .cost .title-box .title {
       color: #fff;
       text-transform: initial; }
@@ -1377,7 +1381,7 @@ body {
 
 .contacts {
   position: relative;
-  background: linear-gradient(to right, #07031a, #070316);
+  background: #070316;
   padding-top: 50px;
   padding-bottom: 50px; }
   .contacts::after {
@@ -1407,7 +1411,8 @@ body {
 .contacts__description .main-header__address {
   margin-bottom: 25px;
   background-color: inherit;
-  width: 100%; }
+  width: 100%;
+  font-size: 24px; }
   .contacts__description .main-header__tel span,
   .contacts__description .main-header__address span {
     white-space: nowrap; }

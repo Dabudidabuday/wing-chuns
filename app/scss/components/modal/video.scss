@@ -1,4 +1,6 @@
-.intro__modal-video {
+.intro__modal-video,
+.combat__modal-video,
+.individual__modal-video {
   position: fixed;
   top: 10%;
   width: 100%;
@@ -33,6 +35,6 @@
   }
 
   &:hover {
-    transform: rotate(90deg);
+    // transform: rotate(90deg);
   }
 }

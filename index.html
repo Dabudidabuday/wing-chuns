@@ -12,30 +12,30 @@
     <div id="overlay" class="undisplay"></div>
 
     <div class="intro__modal-video undisplay">
-      <div class="modal__close">
+      <div class="modal__close" id="intro-close">
         <div class="line"></div>
         <div class="line"></div>
       </div>
 
-      <iframe
+      <!-- <iframe style="display: none"
         width="100%"
-        height="80%"
-        src="https://www.youtube.com/embed/M0xYcWvcxI8"
+        height="90%"
+        src="https://www.youtube.com/embed/M0xYcWvcxI8?autoplay=1"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe>
+      ></iframe> -->
     </div>
 
     <div class="combat__modal-video undisplay">
-      <div class="modal__close">
+      <div class="modal__close" id="combat-close">
         <div class="line"></div>
         <div class="line"></div>
       </div>
 
-      <iframe
-        width="483"
-        height="666"
+      <iframe style="display: none"
+        width="100%"
+        height="80%"
         src="https://www.youtube.com/embed/69TSIsqACLY"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -44,14 +44,14 @@
     </div>
 
     <div class="individual__modal-video undisplay">
-      <div class="modal__close">
+      <div class="modal__close" id="individual-close">
         <div class="line"></div>
         <div class="line"></div>
       </div>
 
-      <iframe
+      <iframe style="display: none"
         width="100%"
-        height="655"
+        height="80%"
         src="https://www.youtube.com/embed/69TSIsqACLY"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -117,43 +117,43 @@
       <div class="flex-row jc-center full-width">
         <nav class="main-header__nav full-width collapsed">
           <ul class="main-header__nav-list" id="menu">
-            <li class="item wow fadeInLeft" data-wow-delay=".2s">
+            <li class="item wow fadeInDown" data-wow-delay=".2s">
               <a href="#about" class="item-link">
                 О Мастере
               </a>
             </li>
 
-            <li class="item wow fadeInLeft" data-wow-delay=".3s">
+            <li class="item wow fadeInDown" data-wow-delay=".3s">
               <a href="#style" class="item-link">
                 О Стиле
               </a>
             </li>
 
-            <li class="item wow fadeInLeft" data-wow-delay=".4s">
+            <li class="item wow fadeInDown" data-wow-delay=".4s">
               <a href="#health" class="item-link">
                 Программа
               </a>
             </li>
 
-            <li class="item wow fadeInLeft" data-wow-delay=".5s">
+            <li class="item wow fadeInDown" data-wow-delay=".5s">
               <a href="#individual" class="item-link">
                 Индивидуальные тренировки
               </a>
             </li>
 
-            <li class="item wow fadeInLeft" data-wow-delay=".6s">
+            <li class="item wow fadeInDown" data-wow-delay=".6s">
               <a href="#cost" class="item-link">
                 Стоимость
               </a>
             </li>
 
-            <li class="item wow fadeInLeft" data-wow-delay=".7s">
+            <li class="item wow fadeInDown" data-wow-delay=".7s">
               <a href="#faq" class="item-link">
                 FAQ
               </a>
             </li>
 
-            <li class="item wow fadeInLeft" data-wow-delay=".8s">
+            <li class="item wow fadeInDown" data-wow-delay=".8s">
               <a href="#contacts" class="item-link">
                 Контакты
               </a>
@@ -175,7 +175,7 @@
           <img src="images/intro-bg.png" alt="" />
 
           <div class="play">
-            <button class="play-btn">
+            <button class="play-btn" id="intro-play">
               <img src="images/play.png" alt="" />
             </button>
             <p class="play-text">
@@ -412,7 +412,7 @@
             <img src="images/combat-preview.png" alt="" />
 
             <div class="play">
-              <button class="play-btn">
+              <button class="play-btn" id="combat-play">
                 <img src="images/play.png" alt="" />
               </button>
               <p class="play-text">
@@ -507,7 +507,7 @@
             </h5>
 
             <button class="button button--go">
-              Получить <span> бесплатное </span> занятие
+              Получить БЕСПЛАТНОЕ занятие
             </button>
           </div>
         </div>
@@ -517,7 +517,7 @@
     <section class="group" id="group">
       <div class="flex-container jc-space-around">
         <div class="group__image">
-          <img src="images/group-bg.jpg" alt="" />
+          <img src="images/group-bg.png" alt="" />
         </div>
 
         <div class="group__description">
@@ -590,7 +590,7 @@
           </ul>
 
           <button class="button button--go">
-            Получить <span> бесплатное </span> занятие
+            Получить БЕСПЛАТНОЕ занятие
           </button>
         </div>
       </div>
@@ -606,9 +606,9 @@
 
         <div class="individual__preview">
           <div class="individual__preview-img">
-            <img src="images/individual-preview.jpg" alt="" />
+            <img src="images/individual-preview.png" alt="" />
             <div class="play">
-              <button class="play-btn">
+              <button class="play-btn" id="individual-play">
                 <img src="images/play.png" alt="" />
               </button>
               <p class="play-text">
@@ -705,10 +705,10 @@
 
         <div class="faq__accordion accordion">
           <div class="accordion__item" id="question1">
-            <a href="#question1" class="accordion__link">
+            <a href="#" class="accordion__link">
               <div class="acccordion__icon">
-                <span class="icon--plus">+</span>
-                <span class="icon--minus">–</span>
+                <!-- <span class="icon--plus">+</span>
+                <span class="icon--minus">–</span> -->
               </div>
               С какого возраста я могу начать заниматься?
             </a>
@@ -722,10 +722,10 @@
           </div>
 
           <div class="accordion__item" id="question2">
-            <a href="#question2" class="accordion__link">
+            <a href="#" class="accordion__link">
               <div class="acccordion__icon">
-                <span class="icon--plus">+</span>
-                <span class="icon--minus">–</span>
+                <!-- <span class="icon--plus">+</span>
+                <span class="icon--minus">–</span> -->
               </div>
               Контурная пластика, для кого?
             </a>
@@ -739,11 +739,11 @@
           </div>
 
           <div class="accordion__item" id="question3">
-            <a href="#question3" class="accordion__link">
-              <div class="acccordion__icon">
-                <span class="icon--plus">+</span>
-                <span class="icon--minus">–</span>
-              </div>
+            <a href="#" class="accordion__link">
+              <!-- <div class="acccordion__icon">
+                <!-- <span class="icon--plus">+</span>
+                <span class="icon--minus">–</span> -->
+              </div> -->
               Контурная пластика, для кого?
             </a>
 
@@ -847,56 +847,74 @@
       </div>
     </footer>
 
-    <!-- Модальное окно для проигрывания видео в секции Intro -->
+    <!-- Модальные окна для проигрывания видео -->
     <script>
-      let overlay = document.getElementById("overlay"),
-        playBtn = document.querySelector(".play-btn"),
-        introVideo = document.querySelector(".intro__modal-video"),
-        combatVideo = document.querySelector(".combat__modal-video"),
-        individualVideo = document.querySelector(".individual__modal-video"),
-        closeBtn = document.querySelector(".modal__close");
+      //overlay for modal windows
+      const overlay = document.getElementById("overlay");
 
-      let introModalOpen = function() {
-        playBtn.addEventListener("click", function() {
-          overlay.classList.toggle("undisplay");
-          introVideo.classList.toggle("undisplay");
+      // Open modal Buttons (VIDEO)
+      const introPlay = document.getElementById("intro-play");
+      const combatPlay = document.getElementById("combat-play");
+      const individualPlay = document.getElementById("individual-play");
+
+      // Close modal widnows
+      const introCloseBtn = document.getElementById("intro-close");
+      const combatCloseBtn = document.getElementById("combat-close");
+      const individualCloseBtn = document.getElementById("individual-close");
+
+      // Video
+      const introVideo = document.querySelector(".intro__modal-video");
+      const combatVideo = document.querySelector(".combat__modal-video");
+      const individualVideo = document.querySelector(
+        ".individual__modal-video"
+      );
+
+      const modalVideoOpen = function(button, video) {
+        const iframe = document.createElement('iframe');
+        iframe.className='intro__iframe';
+        iframe.width="100%";
+        iframe.height = "90%";
+        iframe.src = "https://www.youtube.com/embed/M0xYcWvcxI8?autoplay=1";
+        iframe.frameborder = "0";
+        iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        iframe.allowfullscreen;
+        button.addEventListener("click", function() {
+          overlay.classList.remove("undisplay");
+          video.classList.remove("undisplay");
+          video.appendChild(iframe);
         });
       };
 
-      let introModalClose = function() {
-        closeBtn.addEventListener("click", function() {
-          overlay.classList.toggle("undisplay");
-          introVideo.classList.toggle("undisplay");
+      // <iframe style="display: none"
+      //     width="100%"
+      //     height="90%"
+      //     src="https://www.youtube.com/embed/M0xYcWvcxI8?autoplay=1"
+      //     frameborder="0"
+      //     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      //     allowfullscreen
+      //   ></iframe>
+
+      const modalVideoClose = function(button, video) {
+        const iframe = document.querySelector('.intro__iframe');
+        console.log(iframe);
+        button.addEventListener("click", function() {
+          if (iframe) {
+            video.removeChild(iframe);
+          }
+          overlay.classList.add("undisplay");
+          video.classList.add("undisplay");
         });
       };
 
-      function initIntroModalListeners() {
-        introModalOpen();
-        introModalClose();
-      }
+      modalVideoOpen(introPlay, introVideo);
+      modalVideoOpen(combatPlay, combatVideo);
+      modalVideoOpen(individualPlay, individualVideo);
 
-      initIntroModalListeners();
+      modalVideoClose(introCloseBtn, introVideo);
+      modalVideoClose(combatCloseBtn, combatVideo);
+      modalVideoClose(individualCloseBtn, individualVideo);
 
-      // let combatModalOpen = function() {
-      //   playBtn.addEventListener("click", function() {
-      //     overlay.classList.toggle("undisplay");
-      //     combatVideo.classList.toggle("undisplay");
-      //   });
-      // };
-
-      // let combatModalClose = function() {
-      //   closeBtn.addEventListener("click", function() {
-      //     overlay.classList.toggle("undisplay");
-      //     combatVideo.classList.toggle("undisplay");
-      //   });
-      // };
-
-      // function initCombatModalListeners() {
-      //   combatModalOpen();
-      //   combatModalClose();
-      // }
-
-      // initCombatModalListeners();
+      
     </script>
 
     <!-- Открывает и закрывает меню в хэдере -->
@@ -910,17 +928,17 @@
       });
 
       // TODO выключить скролл при нажатии на (accordion__item(FAQ))
-      const scrollOff = function() {
-        const links = document.querySelectorAll(".accordion__link");
+      // const scrollOff = function() {
+      //   const links = document.querySelectorAll(".accordion__link");
 
-        links.forEach(function(link) {
-          link.onclick = function(e) {
-            e.preventDefault();
-          };
-        });
-      };
+      //   links.forEach(function(link) {
+      //     link.onclick = function(e) {
+      //       e.preventDefault();
+      //     };
+      //   });
+      // };
 
-      scrollOff();
+      // scrollOff();
     </script>
 
     <!-- Jquery -->
