@@ -1,26 +1,26 @@
 (function () {
   let questions = [
     {
-      button: document.getElementById('question1'),
-      answer: document.getElementById('answer1')
+      button: document.querySelector('#question1 button'),
+      answer: document.getElementById('answer1'),
     },
     {
-      button: document.getElementById('question2'),
-      answer: document.getElementById('answer2')
+      button: document.querySelector('#question2 button'),
+      answer: document.getElementById('answer2'),
     },
     {
-      button: document.getElementById('question3'),
-      answer: document.getElementById('answer3')
+      button: document.querySelector('#question3 button'),
+      answer: document.getElementById('answer3'),
     }
   ];
 
   function toggleAccordion(emitter, content) {
     $(emitter).click(function () {
-      if (content.style.height === '0') {
-        return content.style.height = auto;
+      if (content.style.maxHeight === '0px') {
+        return content.style.maxHeight = '250px';
       }
 
-      return content.style.height = 'auto';
+      return content.style.maxHeight = '0px';
     });
   }
 
