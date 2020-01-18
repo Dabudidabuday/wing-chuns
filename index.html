@@ -33,14 +33,14 @@
         <div class="line"></div>
       </div>
 
-<!--      <iframe style="display: none"-->
-<!--        width="100%"-->
-<!--        height="80%"-->
-<!--        src="https://www.youtube.com/embed/69TSIsqACLY"-->
-<!--        frameborder="0"-->
-<!--        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
-<!--        allowfullscreen-->
-<!--      ></iframe>-->
+      <!--      <iframe style="display: none"-->
+      <!--        width="100%"-->
+      <!--        height="80%"-->
+      <!--        src="https://www.youtube.com/embed/69TSIsqACLY"-->
+      <!--        frameborder="0"-->
+      <!--        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
+      <!--        allowfullscreen-->
+      <!--      ></iframe>-->
     </div>
 
     <div class="individual__modal-video undisplay">
@@ -49,14 +49,14 @@
         <div class="line"></div>
       </div>
 
-<!--      <iframe style="display: none"-->
-<!--        width="100%"-->
-<!--        height="80%"-->
-<!--        src="https://www.youtube.com/embed/69TSIsqACLY"-->
-<!--        frameborder="0"-->
-<!--        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
-<!--        allowfullscreen-->
-<!--      ></iframe>-->
+      <!--      <iframe style="display: none"-->
+      <!--        width="100%"-->
+      <!--        height="80%"-->
+      <!--        src="https://www.youtube.com/embed/69TSIsqACLY"-->
+      <!--        frameborder="0"-->
+      <!--        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
+      <!--        allowfullscreen-->
+      <!--      ></iframe>-->
     </div>
 
     <header class="main-header">
@@ -876,14 +876,15 @@
        * @param url {String}
        */
       const openVideoModal = function(button, window, url) {
-        const iframe = document.createElement('iframe');
+        const iframe = document.createElement("iframe");
 
-        iframe.className='intro__iframe';
-        iframe.width="100%";
+        iframe.className = "intro__iframe";
+        iframe.width = "100%";
         iframe.height = "90%";
         iframe.src = url;
         iframe.frameborder = "0";
-        iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+        iframe.allow =
+          "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
         iframe.allowfullscreen;
 
         button.addEventListener("click", function() {
@@ -894,7 +895,7 @@
       };
 
       const modalVideoClose = function(button, video) {
-        const iframe = document.querySelector('.intro__iframe');
+        const iframe = document.querySelector(".intro__iframe");
 
         button.addEventListener("click", function() {
           if (iframe) {
@@ -905,15 +906,25 @@
         });
       };
 
-      openVideoModal(introPlay, introVideo, 'https://www.youtube.com/embed/M0xYcWvcxI8');
-      openVideoModal(combatPlay, combatVideo, 'https://www.youtube.com/embed/69TSIsqACLY');
-      openVideoModal(individualPlay, individualVideo, 'https://www.youtube.com/embed/Ev92DX9HlXI');
+      openVideoModal(
+        introPlay,
+        introVideo,
+        "https://www.youtube.com/embed/M0xYcWvcxI8?autoplay=1"
+      );
+      openVideoModal(
+        combatPlay,
+        combatVideo,
+        "https://www.youtube.com/embed/69TSIsqACLY?autoplay=1"
+      );
+      openVideoModal(
+        individualPlay,
+        individualVideo,
+        "https://www.youtube.com/embed/Ev92DX9HlXI?autoplay=1"
+      );
 
       modalVideoClose(introCloseBtn, introVideo);
       modalVideoClose(combatCloseBtn, combatVideo);
       modalVideoClose(individualCloseBtn, individualVideo);
-
-      
     </script>
 
     <!-- Открывает и закрывает меню в хэдере -->
