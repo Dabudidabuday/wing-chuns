@@ -11,6 +11,40 @@
   <body>
     <div id="overlay" class="undisplay"></div>
 
+    <div class="modal__sign-in undisplay">
+      
+      <button class="sign-in__close" id="sign-in__close">
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+
+      <div class="modal__inner">
+        <h4 class="modal__title">
+          Пожалуйста, заполните форму ниже
+        </h4>
+
+        <form action="#" method="POST" name="sign-in">
+          <fieldset>
+            <label>
+              Ваше имя <sub>*</sub>
+              <input type="text" required>
+            </label>
+
+            <label>
+              Ваш номер телефона <sub>*</sub>
+              <input type="tel" required>
+            </label>
+
+            <label>
+              Ваш Email <sub>*</sub>
+              <input type="email" required>
+            </label>
+          </fieldset>        
+        </form>       
+      </div>
+      <input type="submit" value="ОТПРАВИТЬ" class="form__submit">
+    </div>
+
     <div class="intro__modal-video undisplay">
       <div class="modal__close" id="intro-close">
         <div class="line"></div>
@@ -194,10 +228,10 @@
           </h2>
 
           <div class="intro__buttons">
-            <button class="button button--more" type="button">
+            <button class="button button--more"  type="button">
               Подробнее
             </button>
-            <button class="button button--go" type="button">
+            <button class="button button--go" type="button" id="sign-btn">
               Записаться
             </button>
           </div>
@@ -506,7 +540,7 @@
               Будьте сильными и научитесь постоять за себя!
             </h5>
 
-            <button class="button button--go">
+            <button class="button button--go" id="combat__btn-form">
               Получить БЕСПЛАТНОЕ занятие
             </button>
           </div>
@@ -589,7 +623,7 @@
             <li class="item">- дружный коллектив</li>
           </ul>
 
-          <button class="button button--go">
+          <button class="button button--go" id="group__btn-form">
             Получить БЕСПЛАТНОЕ занятие
           </button>
         </div>
@@ -618,7 +652,7 @@
           </div>
         </div>
         <div class="individual__description">
-          <ul class="indidual__description-list">
+          <ul class="individual__description-list">
             <li class="item">
               -максимальное погружение в «Вин Чун»
             </li>
@@ -846,6 +880,42 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const overlay = document.getElementById('overlay');
+      
+      const modalSignIn = document.querySelector('.modal__sign-in');
+      const signBtn = document.getElementById('sign-btn');
+
+      const groupBtnForm = document.getElementById('group__btn-form');
+      const combatBtnForm = document.getElementById('combat__btn-form');
+
+
+      const close = document.getElementById('sign-in__close');
+
+      let openModalForm = function(button,form) {
+        button.addEventListener('click', function () {
+          overlay.classList.remove('undisplay');
+          form.classList.remove('undisplay');
+        })
+      }
+      
+      let closeModalForm = function(form) {
+        close.addEventListener('click', function() {
+          overlay.classList.add('undisplay');
+          form.classList.add('undisplay');
+        })
+      }
+
+      //OPEN modal Forms
+      openModalForm(signBtn, modalSignIn);
+      openModalForm(groupBtnForm, modalSignIn);
+      openModalForm(combatBtnForm, modalSignIn);
+      
+      // Close Modal Forms
+      closeModalForm(modalSignIn);
+
+    </script>
 
     <!-- Модальные окна для проигрывания видео -->
     <script>
