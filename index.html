@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="dist/main.css" />
     <link rel="stylesheet" media="all" href="app/libraries/animate.css" />
-    <title>Document</title>
+    <title>Wing-chung</title>
   </head>
   <body>
     <div id="overlay" class="undisplay">
@@ -673,7 +673,7 @@
           </ul>
 
           <button class="button button--go" id="individual__btn-form">
-            Записаться на Индивидуальную тренировку
+            Записаться на тренировку
           </button>
         </div>
       </div>
@@ -925,7 +925,17 @@
           overlay.classList.add("undisplay");
           form.classList.add("undisplay");
         });
+
+        window.onclick = function (event) {
+          
+          if (event.target == overlay) {
+            overlay.classList.add("undisplay");
+            form.classList.add("undisplay");
+          }
+        }
       };
+
+      
 
       /**
        * @method SendModalForm
@@ -996,10 +1006,12 @@
       };
 
       const modalVideoClose = function(button, video) {
-        const iframe = document.querySelector(".intro__iframe");
+        
 
         button.addEventListener("click", function() {
+          const iframe = document.querySelector(".intro__iframe");
           if (iframe) {
+            
             video.removeChild(iframe);
           }
           overlay.classList.add("undisplay");
@@ -1062,8 +1074,6 @@
           $("body,html").animate({ scrollTop: top }, 1500);
         });
       });
-
-      console.log($("#intro__more"));
     </script>
 
     <!-- Библиотека для появления элементов при скролле -->

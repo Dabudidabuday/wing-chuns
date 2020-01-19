@@ -4,6 +4,7 @@
   position: relative;
   background-color: #050213;
   z-index: 2;
+  overflow: hidden;
   @include skewBottom;
 
   // Fog
@@ -225,40 +226,4 @@
   transform: rotate(90deg);
   line-height: 1.5;
   text-align: right;
-}
-
-.play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 350px;
-  z-index: 10;
-
-  .play-btn {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    width: 95px;
-    height: 95px;
-    margin-bottom: 25px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    border-radius: 50%;
-    transition: 0.3s;
-    outline: none;
-
-    &:hover {
-      box-shadow: $boxShadowYellow;
-    }
-  }
-
-  .play-text {
-    text-align: center;
-    font-size: 28px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
 }

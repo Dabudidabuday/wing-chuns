@@ -1,21 +1,20 @@
 .modal__sign-in {
-  position: absolute;
-  top: 20vh;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin: 10vh auto;
   max-width: 630px;
-  width: 100%;
+  width: 90%;
   height: 482px;
   border: 3px solid $yellow;
   background-color: #1b202d;
   border-radius: 6px;
   z-index: 1000;
 
-  @media screen and(max-width: 656px) {
-    // left: 0;
-    // transform: translate(0, -50%);
-    // margin: 0 20px;
-    margin: 20px;
+  @media screen and(max-width: 480px) {
+    margin: 5vh auto;
+  }
+
+  @media screen and(max-width: 380px) {
+    margin: 2vh auto;
   }
 
   .modal__inner {
@@ -27,6 +26,10 @@
     font-size: 24px;
     font-family: $fontBold;
     margin-bottom: 37px;
+
+    @media screen and(max-width: 440px) {
+      font-size: 20px;
+    }
   }
 
   fieldset {
@@ -72,6 +75,10 @@
     &:hover {
       box-shadow: $boxShadowYellow;
       text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    @media screen and(max-width: 480px) {
+      margin-top: 0;
     }
   }
 }
