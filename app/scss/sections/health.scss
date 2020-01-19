@@ -60,6 +60,12 @@
       display: block;
       margin: 0 auto;
       text-align: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid $yellow;
+      }
     }
 
     .health__description-title {
